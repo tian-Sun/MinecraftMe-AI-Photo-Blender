@@ -53,5 +53,8 @@
   "bugs": {
     "url": "https://github.com/tian-Sun/MinecraftMe-AI-Photo-Blender/issues"
   },
-  "homepage": "https://same-ou8ycr3k41z-latest.netlify.app"
+  "homepage": "https://same-ou8ycr3k41z-latest.netlify.app",
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }
