@@ -6,8 +6,8 @@ import ClientBody from "./ClientBody";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MinecraftMe - AI 照片融合器",
-  description: "将您的照片融入 Minecraft 世界",
+  title: "minecraftstyle.online - AI照片融合器",
+  description: "将您的照片与 Minecraft 风格世界无缝融合，体验专属像素艺术！",
   icons: {
     icon: "/favicon.ico",
   },

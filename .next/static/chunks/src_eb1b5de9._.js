@@ -67,7 +67,7 @@ function ImageUploader({ onImageUpload, isLoading }) {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "text-lg",
-                        children: "处理中..."
+                        children: "AI智能处理中..."
                     }, void 0, false, {
                         fileName: "[project]/src/components/ImageUploader.tsx",
                         lineNumber: 50,
@@ -95,14 +95,14 @@ function ImageUploader({ onImageUpload, isLoading }) {
                 columnNumber: 9
             }, this) : isDragActive ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 className: "text-lg text-blue-500",
-                children: "拖放图片到这里..."
+                children: "拖放照片到此，开启像素艺术之旅..."
             }, void 0, false, {
                 fileName: "[project]/src/components/ImageUploader.tsx",
                 lineNumber: 56,
                 columnNumber: 9
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 className: "text-lg",
-                children: "点击或拖放图片到这里上传"
+                children: "点击或拖放照片上传，体验 AI 融合像素艺术"
             }, void 0, false, {
                 fileName: "[project]/src/components/ImageUploader.tsx",
                 lineNumber: 58,
@@ -307,7 +307,7 @@ function CanvasEditor({ personImage, background, onCanvasUpdate }) {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute bottom-4 left-4 bg-black bg-opacity-50 text-white p-2 rounded text-sm",
-                children: "使用鼠标拖动调整位置，滚轮调整大小"
+                children: "拖动/缩放人物，调整最佳像素艺术效果"
             }, void 0, false, {
                 fileName: "[project]/src/components/CanvasEditor.tsx",
                 lineNumber: 86,
@@ -490,7 +490,7 @@ function AIBlendButton({ canvasImage, backgroundUrl, disabled = false, onBlendCo
                 onClick: handleClick,
                 disabled: disabled || isLoading || !canvasImage || hasResult,
                 className: "w-full",
-                children: hasResult ? "图片已生成" : isLoading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                children: hasResult ? "像素艺术已生成" : isLoading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__["Loader2"], {
                             className: "mr-2 h-4 w-4 animate-spin"
@@ -499,9 +499,9 @@ function AIBlendButton({ canvasImage, backgroundUrl, disabled = false, onBlendCo
                             lineNumber: 112,
                             columnNumber: 18
                         }, this),
-                        "正在融合中..."
+                        "AI融合生成中..."
                     ]
-                }, void 0, true) : "开始 AI 融合"
+                }, void 0, true) : "一键生成像素艺术"
             }, void 0, false, {
                 fileName: "[project]/src/components/AIBlendButton.tsx",
                 lineNumber: 104,
@@ -639,7 +639,7 @@ function Home() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                             className: "text-4xl font-bold text-green-800 mb-2",
-                            children: "MinecraftMe"
+                            children: "minecraftstyle.online"
                         }, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
                             lineNumber: 108,
@@ -647,7 +647,7 @@ function Home() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-lg text-green-600",
-                            children: "将您的照片融入 Minecraft 世界 ✨"
+                            children: "AI驱动 · 一键生成专属 Minecraft 风格像素艺术照"
                         }, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
                             lineNumber: 111,
@@ -670,19 +670,19 @@ function Home() {
                             },
                             {
                                 step: 2,
-                                label: "移除背景"
+                                label: "智能抠图"
                             },
                             {
                                 step: 3,
-                                label: "选择背景"
+                                label: "选择像素背景"
                             },
                             {
                                 step: 4,
-                                label: "调整位置"
+                                label: "画布编辑"
                             },
                             {
                                 step: 5,
-                                label: "AI 融合"
+                                label: "AI融合生成"
                             }
                         ].map(({ step, label })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex items-center",
@@ -771,7 +771,7 @@ function Home() {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                     className: "text-xl font-semibold text-gray-800 mb-4",
-                                                    children: "2. 背景移除完成 ✅"
+                                                    children: "2. 智能抠图完成 ✅"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/page.tsx",
                                                     lineNumber: 173,
@@ -813,7 +813,7 @@ function Home() {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                     className: "text-xl font-semibold text-gray-800 mb-4",
-                                                    children: "3. 选择 Minecraft 背景"
+                                                    children: "3. 选择 Minecraft 风格背景"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/page.tsx",
                                                     lineNumber: 190,
@@ -847,7 +847,7 @@ function Home() {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                     className: "text-xl font-semibold text-gray-800 mb-4",
-                                                    children: "4. 调整人物位置"
+                                                    children: "4. 画布编辑 · 拖动/缩放人物"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/page.tsx",
                                                     lineNumber: 206,
@@ -873,7 +873,7 @@ function Home() {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                     className: "text-xl font-semibold text-gray-800 mb-4",
-                                                    children: "5. AI 魔法融合"
+                                                    children: "5. AI融合生成 · 一键像素艺术"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/page.tsx",
                                                     lineNumber: 220,
@@ -912,7 +912,7 @@ function Home() {
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: resetToStart,
                                 className: "px-6 py-2 bg-gray-500 hover:bg-gray-600 text-white rounded-lg transition-colors",
-                                children: "重新开始"
+                                children: "重新开始体验"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/page.tsx",
                                 lineNumber: 237,
@@ -928,7 +928,7 @@ function Home() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     className: "text-xl font-semibold text-gray-800 mb-4",
-                                    children: "AI融合结果"
+                                    children: "AI融合结果 · 下载专属像素照"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/page.tsx",
                                     lineNumber: 249,
@@ -948,9 +948,9 @@ function Home() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                     href: blendResult,
-                                    download: "minecraft-blend.png",
+                                    download: "minecraftstyle-art.png",
                                     className: "mt-4 inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition",
-                                    children: "下载图片"
+                                    children: "下载像素艺术照"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/page.tsx",
                                     lineNumber: 258,

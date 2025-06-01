@@ -106,10 +106,10 @@ export default function Home() {
         {/* 标题 */}
         <header className="text-center mb-8">
           <h1 className="text-4xl font-bold text-green-800 mb-2">
-            MinecraftMe
+            minecraftstyle.online
           </h1>
           <p className="text-lg text-green-600">
-            将您的照片融入 Minecraft 世界 ✨
+            AI驱动 · 一键生成专属 Minecraft 风格像素艺术照
           </p>
         </header>
 
@@ -118,10 +118,10 @@ export default function Home() {
           <div className="flex items-center justify-between">
             {[
               { step: 1, label: "上传照片" },
-              { step: 2, label: "移除背景" },
-              { step: 3, label: "选择背景" },
-              { step: 4, label: "调整位置" },
-              { step: 5, label: "AI 融合" },
+              { step: 2, label: "智能抠图" },
+              { step: 3, label: "选择像素背景" },
+              { step: 4, label: "画布编辑" },
+              { step: 5, label: "AI融合生成" },
             ].map(({ step, label }) => (
               <div key={step} className="flex items-center">
                 <div
@@ -171,7 +171,7 @@ export default function Home() {
               {personImage && (
                 <div className="bg-white rounded-lg p-6 shadow-sm">
                   <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                    2. 背景移除完成 ✅
+                    2. 智能抠图完成 ✅
                   </h2>
                   <div>
                     <p className="text-sm text-gray-600 mb-2">已移除背景：</p>
@@ -188,7 +188,7 @@ export default function Home() {
               {personImage && (
                 <div className="bg-white rounded-lg p-6 shadow-sm">
                   <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                    3. 选择 Minecraft 背景
+                    3. 选择 Minecraft 风格背景
                   </h2>
                   <BackgroundSelector
                     onBackgroundSelect={handleBackgroundSelect}
@@ -204,7 +204,7 @@ export default function Home() {
               {personImage && selectedBackground && (
                 <div className="bg-white rounded-lg p-6 shadow-sm">
                   <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                    4. 调整人物位置
+                    4. 画布编辑 · 拖动/缩放人物
                   </h2>
                   <CanvasEditor
                     personImage={personImage}
@@ -218,7 +218,7 @@ export default function Home() {
               {canvasImage && selectedBackground && (
                 <div className="bg-white rounded-lg p-6 shadow-sm">
                   <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                    5. AI 魔法融合
+                    5. AI融合生成 · 一键像素艺术
                   </h2>
                   <AIBlendButton
                     canvasImage={canvasImage}
@@ -238,7 +238,7 @@ export default function Home() {
                 onClick={resetToStart}
                 className="px-6 py-2 bg-gray-500 hover:bg-gray-600 text-white rounded-lg transition-colors"
               >
-                重新开始
+                重新开始体验
               </button>
             </div>
           )}
@@ -247,7 +247,7 @@ export default function Home() {
           {blendResult && (
             <div className="bg-white rounded-lg p-6 shadow-sm mt-8 text-center">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                AI融合结果
+                AI融合结果 · 下载专属像素照
               </h2>
               <img
                 src={blendResult}
@@ -257,10 +257,10 @@ export default function Home() {
               />
               <a
                 href={blendResult}
-                download="minecraft-blend.png"
+                download="minecraftstyle-art.png"
                 className="mt-4 inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition"
               >
-                下载图片
+                下载像素艺术照
               </a>
             </div>
           )}

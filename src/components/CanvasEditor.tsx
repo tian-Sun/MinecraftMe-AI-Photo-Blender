@@ -84,7 +84,7 @@ export default function CanvasEditor({ personImage, background, onCanvasUpdate }
         onMouseLeave={handleMouseUp}
       />
       <div className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white p-2 rounded text-sm">
-        使用鼠标拖动调整位置，滚轮调整大小
+        拖动/缩放人物，调整最佳像素艺术效果
       </div>
     </div>
   );

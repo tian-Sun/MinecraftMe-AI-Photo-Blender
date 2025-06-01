@@ -107,10 +107,10 @@ export default function AIBlendButton({
         className="w-full"
       >
         {hasResult
-          ? "图片已生成"
+          ? "像素艺术已生成"
           : isLoading
-            ? (<><Loader2 className="mr-2 h-4 w-4 animate-spin" />正在融合中...</>)
-            : "开始 AI 融合"
+            ? (<><Loader2 className="mr-2 h-4 w-4 animate-spin" />AI融合生成中...</>)
+            : "一键生成像素艺术"
         }
       </Button>
       

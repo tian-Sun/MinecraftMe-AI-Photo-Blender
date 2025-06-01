@@ -1,23 +1,23 @@
-# MinecraftMe AI Photo Blender 🎮
+# minecraftstyle.online - AI照片融合 · 像素艺术生成器 🎮
 
-An AI-powered tool that seamlessly blends personal photos into Minecraft worlds using cutting-edge AI technology. Transform yourself into a Minecraft character with realistic background integration!
+一个 AI 驱动的工具，将您的照片一键融合进 Minecraft 风格世界，生成专属像素艺术照！
 
-![MinecraftMe Demo](https://same-ou8ycr3k41z-latest.netlify.app)
+![Demo](https://minecraftstyle.online/demo.png)
 
-## ✨ Features
+## ✨ 主要功能
 
-- **🖼️ Drag & Drop Upload**: Easy image upload with visual feedback
-- **🤖 AI Background Removal**: Powered by Replicate's BiRefNet model
-- **🏔️ Minecraft Backgrounds**: Curated collection of iconic Minecraft scenes
-- **🎨 Canvas Editor**: Interactive positioning and resizing of portraits
-- **⚡ AI Blending**: Advanced AI fusion using FLUX Fill Pro model
-- **📱 Responsive Design**: Works perfectly on desktop and mobile
-- **💾 Instant Download**: Export your creations as high-quality PNGs
-- **🎭 Demo Mode**: Try the app without API configuration
+- **🖼️ 拖拽上传**：便捷上传照片，实时预览
+- **🤖 智能抠图**：AI自动去除背景
+- **🏔️ 像素背景库**：精选 Minecraft 风格场景
+- **🎨 画布编辑**：自由拖动缩放人物
+- **⚡ AI融合生成**：一键生成像素艺术照
+- **📱 响应式设计**：移动端/桌面端完美适配
+- **💾 即时下载**：高质量 PNG 导出
+- **🎭 演示模式**：无需 API 配置即可体验
 
-## 🚀 Live Demo
+## 🚀 在线体验
 
-🌐 **[Try MinecraftMe Live](https://same-ou8ycr3k41z-latest.netlify.app)**
+🌐 **[立即体验 minecraftstyle.online](https://minecraftstyle.online)**
 
 ## 🛠️ Tech Stack
 

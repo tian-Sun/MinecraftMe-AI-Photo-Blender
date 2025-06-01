@@ -47,15 +47,15 @@ export default function ImageUploader({ onImageUpload, isLoading }: ImageUploade
       <input {...getInputProps()} />
       {isLoading ? (
         <div className="text-gray-500">
-          <p className="text-lg">处理中...</p>
+          <p className="text-lg">AI智能处理中...</p>
           <div className="mt-2 animate-spin rounded-full h-8 w-8 border-b-2 border-gray-500 mx-auto"></div>
         </div>
       ) : preview ? (
         <img src={preview} alt="Preview" className="max-h-64 mx-auto" />
       ) : isDragActive ? (
-        <p className="text-lg text-blue-500">拖放图片到这里...</p>
+        <p className="text-lg text-blue-500">拖放照片到此，开启像素艺术之旅...</p>
       ) : (
-        <p className="text-lg">点击或拖放图片到这里上传</p>
+        <p className="text-lg">点击或拖放照片上传，体验 AI 融合像素艺术</p>
       )}
     </div>
   );
