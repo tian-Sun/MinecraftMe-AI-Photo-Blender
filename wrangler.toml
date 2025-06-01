@@ -3,7 +3,10 @@ command = "bun run build"
 output_directory = ".next"
 
 [build.environment]
-NODE_VERSION = "18"
+NODE_VERSION = "18.18.0"
 
 [site]
-bucket = ".next" 
+bucket = ".next"
+
+[pages]
+pages_build_output_dir = ".next" 
