@@ -1,0 +1,9 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "bun run build",
+  "installCommand": "bun install",
+  "outputDirectory": ".next",
+  "env": {
+    "NODE_VERSION": "18.18.0"
+  }
+} 
