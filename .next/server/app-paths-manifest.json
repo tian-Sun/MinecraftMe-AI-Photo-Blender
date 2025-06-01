@@ -1,0 +1,6 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/ai-blend/route": "app/api/ai-blend/route.js",
+  "/api/remove-background/route": "app/api/remove-background/route.js",
+  "/page": "app/page.js"
+}
