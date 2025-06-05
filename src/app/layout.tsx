@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ClientBody from "./ClientBody";
+import { LanguageProvider } from '@/contexts/LanguageContext';
+import Header from '@/components/Header';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +23,10 @@ export default function RootLayout({
   return (
     <html lang="zh">
       <body suppressHydrationWarning className={inter.className}>
-        {children}
+        <LanguageProvider>
+          <Header />
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );
