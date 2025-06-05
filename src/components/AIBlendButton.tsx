@@ -16,13 +16,15 @@ async function uploadToCloudinary(base64: string): Promise<string> {
   const formData = new FormData();
   formData.append("file", base64);
   formData.append("upload_preset", "haotian");
-  const res = await fetch("https://api.cloudinary.com/v1_1/du6txwq9b/image/upload", {
+  
+  const response = await fetch("/api/upload", {
     method: "POST",
     body: formData,
   });
-  const data = await res.json();
-  if (data.secure_url) return data.secure_url;
-  throw new Error(data.error?.message || "Cloudinary 上传失败");
+  
+  const data = await response.json();
+  if (data.url) return data.url;
+  throw new Error(data.error || "Cloudinary upload failed");
 }
 
 export default function AIBlendButton({
@@ -51,7 +53,7 @@ export default function AIBlendButton({
 
     if (!canvasImage) {
       console.error("❌ 错误：canvasImage 为空");
-      setError("请先调整人物位置");
+      setError("Please adjust the character position first");
       return;
     }
 
@@ -73,7 +75,7 @@ export default function AIBlendButton({
         },
         body: JSON.stringify({
           input_image: imageUrl, // Cloudinary 上传后的图片 URL
-          prompt: "A scene with modern architecture in the background: place the character at the left rule-of-thirds intersection, making them roughly one-third the height of the building; preserve the character’s original illustration style untouched; harmonize the palette and lighting so the character’s colors blend seamlessly into the background for a cohesive composition." // 只传必需参数
+          prompt: "A scene with modern architecture in the background: place the character at the left rule-of-thirds intersection, making them roughly one-third the height of the building; preserve the character's original illustration style untouched; harmonize the palette and lighting so the character's colors blend seamlessly into the background for a cohesive composition." // 只传必需参数
         }),
       });
 
@@ -86,14 +88,14 @@ export default function AIBlendButton({
       }
 
       if (!data.result) {
-        throw new Error("AI 融合失败：未返回结果");
+        throw new Error("AI blending failed: no result returned");
       }
 
       console.log("✅ AI 融合成功，调用 onBlendComplete");
       handleBlendCompleteWrapper(data.result);
     } catch (error) {
       console.error("❌ AI 融合错误:", error);
-      setError(error instanceof Error ? error.message : "AI 融合失败，请重试");
+      setError(error instanceof Error ? error.message : "AI blending failed, please try again");
     } finally {
       setIsLoading(false);
     }
@@ -107,10 +109,10 @@ export default function AIBlendButton({
         className="w-full"
       >
         {hasResult
-          ? "像素艺术已生成"
+          ? "Pixel Art Generated"
           : isLoading
-            ? (<><Loader2 className="mr-2 h-4 w-4 animate-spin" />AI融合生成中...</>)
-            : "一键生成像素艺术"
+            ? (<><Loader2 className="mr-2 h-4 w-4 animate-spin" />AI blending in progress...</>)
+            : "Generate Pixel Art with One Click"
         }
       </Button>
       

@@ -17,17 +17,17 @@ interface BackgroundSelectorProps {
 const defaultBackgrounds: Background[] = [
   {
     id: "1",
-    name: "草原",
+    name: "Plains",
     url: "/backgrounds/plains.jpg"
   },
   {
     id: "2",
-    name: "沙漠",
+    name: "Desert",
     url: "/backgrounds/desert.jpg"
   },
   {
     id: "3",
-    name: "雪地",
+    name: "Snow",
     url: "/backgrounds/snow.jpg"
   }
 ];

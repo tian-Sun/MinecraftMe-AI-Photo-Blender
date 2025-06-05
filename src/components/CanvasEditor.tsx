@@ -84,7 +84,7 @@ export default function CanvasEditor({ personImage, background, onCanvasUpdate }
         onMouseLeave={handleMouseUp}
       />
       <div className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white p-2 rounded text-sm">
-        拖动/缩放人物，调整最佳像素艺术效果
+        Drag/scale the character to achieve the best pixel art effect
       </div>
     </div>
   );

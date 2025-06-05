@@ -6,6 +6,7 @@ import BackgroundSelector from "@/components/BackgroundSelector";
 import CanvasEditor from "@/components/CanvasEditor";
 import AIBlendButton from "@/components/AIBlendButton";
 import HeroSection from '@/components/HeroSection';
+import Footer from '@/components/Footer';
 
 interface Background {
   id: string;
@@ -105,133 +106,128 @@ export default function Home() {
     <main>
       <HeroSection />
       <div className="min-h-screen bg-gradient-to-br from-purple-50 to-purple-100">
-        <div className="container mx-auto px-4 py-8">
-          {/* 标题 */}
-          <header className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-[#22223b] mb-2">
-              minecraftstyle.online
-            </h1>
-            <p className="text-lg text-[#a259ff]">
-              AI驱动 · 一键生成专属 Minecraft 风格像素艺术照
-            </p>
-          </header>
-
-          {/* 进度指示器 */}
-          <div className="max-w-4xl mx-auto mb-8">
-            <div className="flex items-center justify-between">
-              {[
-                { step: 1, label: "上传照片" },
-                { step: 2, label: "智能抠图" },
-                { step: 3, label: "选择像素背景" },
-                { step: 4, label: "画布编辑" },
-                { step: 5, label: "AI融合生成" },
-              ].map(({ step, label }) => (
-                <div key={step} className="flex items-center">
-                  <div
-                    className={`
-                      w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold
-                      ${currentStep >= step
-                        ? "bg-gradient-to-r from-[#7c3aed] via-[#a855f7] to-[#c084fc] text-white"
-                        : "bg-gray-200 text-gray-500"
-                      }
-                    `}
-                  >
-                    {step}
-                  </div>
-                  <span className="text-sm text-gray-600 ml-2 hidden sm:block">
-                    {label}
-                  </span>
-                  {step < 5 && (
+       <div>
+          {/* 顶部标题+步骤条区域，纯白背景，适中上下间距，全屏宽度 */}
+          <div className="bg-white w-full py-12 mb-8">
+            <header className="text-center mb-8">
+              <h1 className="text-2xl font-bold text-[#22223b] mb-2">
+                minecraftstyle.online
+              </h1>
+              <p className="text-lg text-[#a259ff]">
+                AI-powered · Instantly create your own Minecraft-style pixel art portrait
+              </p>
+            </header>
+            <div className="max-w-4xl mx-auto mb-0">
+              <div className="flex items-center justify-between gap-0">
+                {[
+                  { step: 1, label: "Upload Photo" },
+                  { step: 2, label: "Smart Cutout" },
+                  { step: 3, label: "Choose Pixel Background" },
+                  { step: 4, label: "Canvas Edit" },
+                  { step: 5, label: "AI Blend & Generate" },
+                ].map(({ step, label }) => (
+                  <div key={step} className="flex items-center">
                     <div
                       className={`
-                        w-8 h-1 mx-2
-                        ${currentStep > step ? "bg-[#a259ff]" : "bg-gray-200"}
+                        w-7 h-7 rounded-full flex items-center justify-center text-xs font-semibold
+                        ${currentStep >= step
+                          ? "bg-gradient-to-r from-[#7c3aed] via-[#a855f7] to-[#c084fc] text-white"
+                          : "bg-gray-200 text-gray-500"
+                        }
                       `}
-                    />
-                  )}
-                </div>
-              ))}
+                    >
+                      {step}
+                    </div>
+                    <span className="text-xs text-gray-600 ml-1 hidden sm:block whitespace-nowrap">
+                      {label}
+                    </span>
+                    {step < 5 && (
+                      <div
+                        className={`
+                          w-6 h-0.5 mx-1 rounded-full
+                          ${currentStep > step ? "bg-[#a259ff]" : "bg-gray-200"}
+                        `}
+                      />
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-
+          </div>
+          <div className="container mx-auto px-4 py-8">
           {/* 主要内容区域 */}
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {/* 左侧：控制面板 */}
-              <div className="space-y-6">
-                {/* 步骤 1：图片上传 */}
-                <div className="bg-white rounded-lg p-6 shadow-sm">
+          <div className="max-w-2xl mx-auto">
+            <div className="flex flex-col gap-6 items-center">
+              {/* 步骤 1：图片上传 */}
+              <div className="bg-white rounded-lg p-6 shadow-sm w-full">
+                <h2 className="text-xl font-semibold text-gray-800 mb-4">
+                  1. Upload Your Photo
+                </h2>
+                <ImageUploader
+                  onImageUpload={handleImageUpload}
+                  isLoading={isProcessing}
+                />
+              </div>
+
+              {/* 步骤 2：背景移除结果 */}
+              {personImage && (
+                <div className="bg-white rounded-lg p-6 shadow-sm w-full">
                   <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                    1. 上传您的照片
+                    2. Smart Cutout Complete ✅
                   </h2>
-                  <ImageUploader
-                    onImageUpload={handleImageUpload}
-                    isLoading={isProcessing}
+                  <div>
+                    <p className="text-sm text-gray-600 mb-2">Background removed:</p>
+                    <img
+                      src={personImage}
+                      alt="Photo with background removed"
+                      className="w-full max-w-xs rounded-lg bg-gray-100 mx-auto"
+                    />
+                  </div>
+                </div>
+              )}
+
+              {/* 步骤 3：背景选择 */}
+              {personImage && (
+                <div className="bg-white rounded-lg p-6 shadow-sm w-full">
+                  <h2 className="text-xl font-semibold text-gray-800 mb-4">
+                    3. Choose a Minecraft-style Background
+                  </h2>
+                  <BackgroundSelector
+                    onBackgroundSelect={handleBackgroundSelect}
+                    selectedBackground={selectedBackground}
                   />
                 </div>
+              )}
 
-                {/* 步骤 2：背景移除结果 */}
-                {personImage && (
-                  <div className="bg-white rounded-lg p-6 shadow-sm">
-                    <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                      2. 智能抠图完成 ✅
-                    </h2>
-                    <div>
-                      <p className="text-sm text-gray-600 mb-2">已移除背景：</p>
-                      <img
-                        src={personImage}
-                        alt="已移除背景的照片"
-                        className="w-full max-w-xs rounded-lg bg-gray-100"
-                      />
-                    </div>
-                  </div>
-                )}
+              {/* 步骤 4：画布编辑 */}
+              {personImage && selectedBackground && (
+                <div className="bg-white rounded-lg p-6 shadow-sm w-full">
+                  <h2 className="text-xl font-semibold text-gray-800 mb-4">
+                    4. Canvas Edit · Drag/Scale Character
+                  </h2>
+                  <CanvasEditor
+                    personImage={personImage}
+                    background={selectedBackground}
+                    onCanvasUpdate={handleCanvasUpdate}
+                  />
+                </div>
+              )}
 
-                {/* 步骤 3：背景选择 */}
-                {personImage && (
-                  <div className="bg-white rounded-lg p-6 shadow-sm">
-                    <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                      3. 选择 Minecraft 风格背景
-                    </h2>
-                    <BackgroundSelector
-                      onBackgroundSelect={handleBackgroundSelect}
-                      selectedBackground={selectedBackground}
-                    />
-                  </div>
-                )}
-              </div>
-
-              {/* 右侧：画布和 AI 融合 */}
-              <div className="space-y-6">
-                {/* 步骤 4：画布编辑 */}
-                {personImage && selectedBackground && (
-                  <div className="bg-white rounded-lg p-6 shadow-sm">
-                    <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                      4. 画布编辑 · 拖动/缩放人物
-                    </h2>
-                    <CanvasEditor
-                      personImage={personImage}
-                      background={selectedBackground}
-                      onCanvasUpdate={handleCanvasUpdate}
-                    />
-                  </div>
-                )}
-
-                {/* 步骤 5：AI 融合 */}
-                {canvasImage && selectedBackground && (
-                  <div className="bg-white rounded-lg p-6 shadow-sm">
-                    <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                      5. AI融合生成 · 一键像素艺术
-                    </h2>
-                    <AIBlendButton
-                      canvasImage={canvasImage}
-                      backgroundUrl={selectedBackground.url}
-                      disabled={!canvasImage || !selectedBackground}
-                      onBlendComplete={handleBlendComplete}
-                    />
-                  </div>
-                )}
-              </div>
+              {/* 步骤 5：AI 融合 */}
+              {canvasImage && selectedBackground && (
+                <div className="bg-white rounded-lg p-6 shadow-sm w-full">
+                  <h2 className="text-xl font-semibold text-gray-800 mb-4">
+                    5. AI Blend · One-click Pixel Art
+                  </h2>
+                  <AIBlendButton
+                    canvasImage={canvasImage}
+                    backgroundUrl={selectedBackground.url}
+                    disabled={!canvasImage || !selectedBackground}
+                    onBlendComplete={handleBlendComplete}
+                  />
+                </div>
+              )}
             </div>
 
             {/* 重新开始按钮 */}
@@ -241,7 +237,7 @@ export default function Home() {
                   onClick={resetToStart}
                   className="px-6 py-2 bg-gray-500 hover:bg-gray-600 text-white rounded-lg transition-colors"
                 >
-                  重新开始体验
+                  Restart Experience
                 </button>
               </div>
             )}
@@ -250,11 +246,11 @@ export default function Home() {
             {blendResult && (
               <div className="bg-white rounded-lg p-6 shadow-sm mt-8 text-center">
                 <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                  AI融合结果 · 下载专属像素照
+                  AI Blend Result · Download Your Pixel Art
                 </h2>
                 <img
                   src={blendResult}
-                  alt="AI融合结果"
+                  alt="AI Blend Result"
                   className="w-full max-w-lg mx-auto rounded-lg border"
                   style={{ background: "#eee" }}
                 />
@@ -263,13 +259,14 @@ export default function Home() {
                   download="minecraftstyle-art.png"
                   className="mt-4 inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition"
                 >
-                  下载像素艺术照
+                  Download Pixel Art
                 </a>
               </div>
             )}
           </div>
         </div>
       </div>
+      <Footer />
     </main>
   );
 }
