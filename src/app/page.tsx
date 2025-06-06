@@ -6,6 +6,7 @@ import BackgroundSelector from "@/components/BackgroundSelector";
 import CanvasEditor from "@/components/CanvasEditor";
 import AIBlendButton from "@/components/AIBlendButton";
 import HeroSection from '@/components/HeroSection';
+import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 
 interface Background {
@@ -105,6 +106,7 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
+      
       <div className="min-h-screen bg-gradient-to-br from-purple-50 to-purple-100">
        <div>
           {/* 顶部标题+步骤条区域，纯白背景，适中上下间距，全屏宽度 */}
@@ -266,6 +268,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <FAQ />
       <Footer />
     </main>
   );

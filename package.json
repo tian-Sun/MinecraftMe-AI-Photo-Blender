@@ -12,6 +12,8 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "3": "^2.1.0",
+    "@radix-ui/react-accordion": "^1.2.11",
     "@radix-ui/react-select": "^2.2.5",
     "@radix-ui/react-separator": "^1.1.7",
     "autoprefixer": "^10.4.21",
