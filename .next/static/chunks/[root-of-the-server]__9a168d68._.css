@@ -698,10 +698,6 @@ body {
   max-height: 480px;
 }
 
-.min-h-screen {
-  min-height: 100vh;
-}
-
 .w-12 {
   width: 3rem;
 }
@@ -1370,11 +1366,6 @@ body {
 
 .text-center {
   text-align: center;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-3xl {

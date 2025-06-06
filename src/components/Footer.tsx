@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
 
           {/* About */}
-          {/* <div>
+          <div>
             <h4 className="font-semibold mb-4">About</h4>
             <ul className="space-y-3 text-muted-foreground">
               <li>
@@ -36,17 +36,12 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#showcase" className="hover:text-foreground transition-colors">
-                  Showcases
-                </a>
-              </li>
-              <li>
                 <a href="#pricing" className="hover:text-foreground transition-colors">
                   Pricing
                 </a>
               </li>
             </ul>
-          </div> */}
+          </div>
 
           {/* Resources */}
           {/* <div>
