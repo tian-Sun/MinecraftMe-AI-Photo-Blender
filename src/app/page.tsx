@@ -6,9 +6,14 @@ import BackgroundSelector from "@/components/BackgroundSelector";
 import CanvasEditor from "@/components/CanvasEditor";
 import AIBlendButton from "@/components/AIBlendButton";
 import HeroSection from '@/components/HeroSection';
+import Testimonials from '@/components/Testimonials';
+import PricingPlans from '@/components/PricingPlans';
+import PerformanceMetrics from '@/components/PerformanceMetrics';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
-
+import KeyFeatures from '@/components/KeyFeatures';
+import WhatIs from '@/components/WhatIsGhibliAI';
+import ExamplesGallery from '@/components/ExamplesGallery';
 interface Background {
   id: string;
   name: string;
@@ -107,55 +112,57 @@ export default function Home() {
     <main>
       <HeroSection />
       
-      <div className="min-h-screen bg-gradient-to-br from-purple-50 to-purple-100">
-       <div>
-          {/* 顶部标题+步骤条区域，纯白背景，适中上下间距，全屏宽度 */}
-          <div className="bg-white w-full py-12 mb-8">
-            <header className="text-center mb-8">
-              <h1 className="text-2xl font-bold text-[#22223b] mb-2">
-                minecraftstyle.online
-              </h1>
-              <p className="text-lg text-[#a259ff]">
-                AI-powered · Instantly create your own Minecraft-style pixel art portrait
-              </p>
-            </header>
-            <div className="max-w-4xl mx-auto mb-0">
-              <div className="flex items-center justify-between gap-0">
-                {[
-                  { step: 1, label: "Upload Photo" },
-                  { step: 2, label: "Smart Cutout" },
-                  { step: 3, label: "Choose Pixel Background" },
-                  { step: 4, label: "Canvas Edit" },
-                  { step: 5, label: "AI Blend & Generate" },
-                ].map(({ step, label }) => (
-                  <div key={step} className="flex items-center">
-                    <div
-                      className={`
-                        w-7 h-7 rounded-full flex items-center justify-center text-xs font-semibold
-                        ${currentStep >= step
-                          ? "bg-gradient-to-r from-[#7c3aed] via-[#a855f7] to-[#c084fc] text-white"
-                          : "bg-gray-200 text-gray-500"
-                        }
-                      `}
-                    >
-                      {step}
-                    </div>
-                    <span className="text-xs text-gray-600 ml-1 hidden sm:block whitespace-nowrap">
-                      {label}
-                    </span>
-                    {step < 5 && (
+      <div className="bg-gradient-to-br from-purple-50 to-purple-100">
+        <div className="container mx-auto px-4 py-8">
+          {/* 标题 */}
+          <header className="text-center mb-8">
+            <h1 className="text-4xl font-bold text-[#22223b] mb-2">
+              minecraftstyle.online
+            </h1>
+            <p className="text-lg text-[#a259ff]">
+              AI驱动 · 一键生成专属 Minecraft 风格像素艺术照
+            </p>
+          </header>
+          <div>
+            {/* 顶部标题+步骤条区域，纯白背景，适中上下间距，全屏宽度 */}
+            <div className="bg-white w-full py-12 mb-8">
+              <div className="max-w-4xl mx-auto mb-0">
+                <div className="flex items-center justify-between gap-0">
+                  {[
+                    { step: 1, label: "Upload Photo" },
+                    { step: 2, label: "Smart Cutout" },
+                    { step: 3, label: "Choose Pixel Background" },
+                    { step: 4, label: "Canvas Edit" },
+                    { step: 5, label: "AI Blend & Generate" },
+                  ].map(({ step, label }) => (
+                    <div key={step} className="flex items-center">
                       <div
                         className={`
-                          w-6 h-0.5 mx-1 rounded-full
-                          ${currentStep > step ? "bg-[#a259ff]" : "bg-gray-200"}
+                          w-7 h-7 rounded-full flex items-center justify-center text-xs font-semibold
+                          ${currentStep >= step
+                            ? "bg-gradient-to-r from-[#7c3aed] via-[#a855f7] to-[#c084fc] text-white"
+                            : "bg-gray-200 text-gray-500"
+                          }
                         `}
-                      />
-                    )}
-                  </div>
-                ))}
+                      >
+                        {step}
+                      </div>
+                      <span className="text-xs text-gray-600 ml-1 hidden sm:block whitespace-nowrap">
+                        {label}
+                      </span>
+                      {step < 5 && (
+                        <div
+                          className={`
+                            w-6 h-0.5 mx-1 rounded-full
+                            ${currentStep > step ? "bg-[#a259ff]" : "bg-gray-200"}
+                          `}
+                        />
+                      )}
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
           </div>
           <div className="container mx-auto px-4 py-8">
           {/* 主要内容区域 */}
@@ -268,8 +275,15 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* <ExamplesGallery /> */}
+      <WhatIs />
+      <KeyFeatures />
+      <PerformanceMetrics /> 
+      <PricingPlans />
+      <Testimonials />
       <FAQ />
       <Footer />
+      </div>
     </main>
   );
 }
