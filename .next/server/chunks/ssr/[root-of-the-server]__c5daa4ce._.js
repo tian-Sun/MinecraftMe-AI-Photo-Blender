@@ -133,8 +133,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Header$
 ;
 ;
 const metadata = {
-    title: "minecraftstyle.online - AI照片融合器",
-    description: "将您的照片与 Minecraft 风格世界无缝融合，体验专属像素艺术！",
+    title: "Minecraft Photo Background Generator | Upload & Blend Instantly",
+    description: "Upload your full-body photo and blend into Minecraft backgrounds instantly. A seamless way for Minecraft fans to create game-style portraits in seconds.",
     icons: {
         icon: "/favicon.ico"
     }

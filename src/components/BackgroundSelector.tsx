@@ -27,8 +27,14 @@ const defaultBackgrounds: Background[] = [
   },
   {
     id: "3",
-    name: "Snow",
-    url: "/backgrounds/snow.jpg"
+    name: "Forest",
+    url: "/backgrounds/forest.jpeg"
+  }
+  ,
+  {
+    id: "4",
+    name: "Woodland",
+    url: "/backgrounds/woodland.png"
   }
 ];
 

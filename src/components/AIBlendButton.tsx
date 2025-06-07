@@ -75,7 +75,10 @@ export default function AIBlendButton({
         },
         body: JSON.stringify({
           input_image: imageUrl, // Cloudinary 上传后的图片 URL
-          prompt: "A scene with modern architecture in the background: place the character at the left rule-of-thirds intersection, making them roughly one-third the height of the building; preserve the character's original illustration style untouched; harmonize the palette and lighting so the character's colors blend seamlessly into the background for a cohesive composition." // 只传必需参数
+          prompt:"Place the human subject in a suitable position within a Minecraft background scene, ensuring natural fusion between the character and the environment. Keep the original look of the character without beautification, but allow slight pose adjustment for better interaction with the scene (e.g., sitting on blocks, walking paths, standing near trees or cliffs). Match the lighting of the character to the background light source for seamless integration—whether sunlight, shadows, or evening light. Composition should guide focus subtly to the subject without making it stand out unnaturally; align with the rule of thirds or golden ratio if needed. Avoid harsh edges or cut-out appearance. Preserve the pixelated style and lighting of the Minecraft environment, and adjust the subject's tone and shadows to match accordingly. Don't altered face, repainted face, beautified, artificial skin, unrealistic texture, face retouch, makeup, cartoonized face, doll-like, AI-generated face",
+          output_format: "png",
+          safety_tolerance: 0,
+          aspect_ratio: "match_input_image"
         }),
       });
 

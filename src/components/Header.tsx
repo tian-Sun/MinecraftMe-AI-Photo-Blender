@@ -12,9 +12,12 @@ import { Globe } from 'lucide-react';
 import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { languages, Language } from '@/lib/i18n';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const { language, setLanguage, t } = useLanguage();
+  const pathname = usePathname();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -22,7 +25,18 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-2">
+            <Link
+              href="/"
+              scroll={false}
+              onClick={e => {
+                if (pathname === '/') {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+              }}
+              className="flex items-center space-x-2 cursor-pointer select-none"
+              aria-label="Go to homepage"
+            >
               <Image
                 src="/logo.png"
                 alt="MinecraftStyle.online"
@@ -31,7 +45,7 @@ export default function Header() {
                 className="rounded-md"
               />
               <span className="text-xl font-bold text-foreground">MinecraftStyle.online</span>
-            </div>
+            </Link>
           </div>
 
           {/* Navigation */}

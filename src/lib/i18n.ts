@@ -14,7 +14,7 @@ export const translations = {
     },
     hero: {
       badge: '2025 🎉 Free Minecraft Style AI Image Generator Now Available',
-      title: 'Minecraft Style AI Image Generator',
+      title: 'Step into the Minecraft World — With Your Own Photo',
       titleHighlight: 'Free',
       description: `Transform your photos into enchanting Minecraft-style artwork with our free AI image generator. Experience the magic of Minecraft\'s art style powered by advanced AI technology.`,
       cta: 'Click To Generate Minecraft-Style Now!',

@@ -40,7 +40,7 @@ export default function HeroSection() {
           </div>
 
           {/* Right Image */}
-          <div className="relative max-w-[480px] max-h-[480px] w-full h-full mx-auto">
+          <div className="relative max-w-[520px] max-h-[520px] w-full h-full mx-auto">
             <div className="relative bg-white rounded-2xl shadow-card p-2 sm:p-4">
               <div className="grid" style={{ gridTemplateColumns: '1fr 48px 1fr' }}>
                 {/* Before 区域：上下两张图 */}
@@ -53,8 +53,8 @@ export default function HeroSection() {
                       <Image
                         src="/demo/person.png"
                         alt="Before 1"
-                        width={140}
-                        height={140}
+                        width={240}
+                        height={240}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -62,7 +62,7 @@ export default function HeroSection() {
                   <div>
                     <div className="aspect-square rounded-lg overflow-hidden mt-1 max-w-[140px] max-h-[140px] mx-auto">
                       <Image
-                        src="/demo/desert.jpg"
+                        src="/demo/desert.jpeg"
                         alt="Before 2"
                         width={240}
                         height={240}
@@ -102,8 +102,8 @@ export default function HeroSection() {
                       <Image
                         src="/demo/result.png"
                         alt="After transformation"
-                        width={240}
-                        height={240}
+                        width={300}
+                        height={300}
                         className="w-full h-full object-cover"
                       />
                     </div>
