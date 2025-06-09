@@ -199,7 +199,7 @@ export default function Home() {
                 {personImage && (
                   <div className="bg-white rounded-lg p-6 shadow-sm w-full">
                     <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                      3. Choose a Minecraft-style Background
+                      2. Choose a Minecraft-style Background
                     </h2>
                     <BackgroundSelector
                       onBackgroundSelect={handleBackgroundSelect}
@@ -212,7 +212,7 @@ export default function Home() {
                 {personImage && selectedBackground && (
                   <div className="bg-white rounded-lg p-6 shadow-sm w-full">
                     <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                      4. Canvas Edit · Drag/Scale Character
+                      3. Canvas Edit · Drag/Scale Character
                     </h2>
                     <CanvasEditor
                       personImage={personImage}
@@ -226,7 +226,7 @@ export default function Home() {
                 {canvasImage && selectedBackground && (
                   <div className="bg-white rounded-lg p-6 shadow-sm w-full">
                     <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                      5. AI Blend · One-click Pixel Art
+                      4. AI Blend · One-click Pixel Art
                     </h2>
                     <AIBlendButton
                       canvasImage={canvasImage}
