@@ -13,6 +13,9 @@
   },
   "dependencies": {
     "3": "^2.1.0",
+    "@bytescale/sdk": "^3.52.0",
+    "@bytescale/upload-widget": "^4.27.0",
+    "@bytescale/upload-widget-react": "^4.19.0",
     "@next-auth/prisma-adapter": "^1.0.7",
     "@radix-ui/react-accordion": "^1.2.11",
     "@radix-ui/react-collapsible": "^1.1.11",
