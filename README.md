@@ -1,6 +1,6 @@
 # MinecraftMe AI Photo Blender
 
-Transform your photos into Minecraft-style pixelated art using AI!
+Transform your photos into Minecraft-style pixelated art using AI!!
 
 ## Features
 
