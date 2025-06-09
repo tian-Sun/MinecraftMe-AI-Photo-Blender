@@ -119,7 +119,7 @@ export default function Home() {
 
   return (
     <main>
-      <HeroSection />
+     
 
       <div className="bg-gradient-to-br from-purple-50 to-purple-100">
         <div className="container mx-auto px-4 py-8">
@@ -262,6 +262,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <HeroSection />
         {/* <ExamplesGallery /> */}
         <WhatIs />
         <KeyFeatures />

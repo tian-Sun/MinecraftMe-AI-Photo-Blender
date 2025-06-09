@@ -8,16 +8,31 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { Globe } from 'lucide-react';
+import { Globe, User, LogOut } from 'lucide-react';
 import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { languages, Language } from '@/lib/i18n';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useSession, signOut } from 'next-auth/react';
+import useSWR from 'swr';
+
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 export default function Header() {
   const { language, setLanguage, t } = useLanguage();
   const pathname = usePathname();
+  const { data: session, status } = useSession();
+  
+  // 获取用户剩余使用次数
+  const { data: usageData } = useSWR(
+    session ? '/api/remaining' : null,
+    fetcher,
+    {
+      refreshInterval: 0,
+      revalidateOnFocus: true,
+    }
+  );
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -65,29 +80,55 @@ export default function Header() {
           </nav>
 
           {/* Right side */}
-          
-          {/* <div className="flex items-center space-x-4">
-            <Select value={language} onValueChange={(value: Language) => setLanguage(value)}>
-              <SelectTrigger className="w-28 border-none bg-transparent">
+          <div className="flex items-center space-x-4">
+            {/* 用户状态显示 */}
+            {status === 'loading' ? (
+              <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-purple-600"></div>
+            ) : session ? (
+              <div className="flex items-center space-x-3">
+                {/* 显示剩余使用次数 */}
+                {usageData && (
+                  <div className="hidden sm:flex text-sm text-gray-600">
+                    <span className="font-medium text-purple-600">
+                      {usageData.remainingGenerations}
+                    </span>
+                    <span className="ml-1">uses left today</span>
+                  </div>
+                )}
+                
+                {/* 用户头像和菜单 */}
                 <div className="flex items-center space-x-2">
-                  <Globe className="h-4 w-4" />
-                  <SelectValue />
+                  {session.user?.image ? (
+                    <Image
+                      src={session.user.image}
+                      alt="User avatar"
+                      width={32}
+                      height={32}
+                      className="rounded-full"
+                    />
+                  ) : (
+                    <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
+                      <User className="w-4 h-4 text-gray-600" />
+                    </div>
+                  )}
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={() => signOut()}
+                    className="hidden sm:flex"
+                  >
+                    <LogOut className="w-4 h-4" />
+                  </Button>
                 </div>
-              </SelectTrigger>
-              <SelectContent>
-                {Object.entries(languages).map(([code, name]) => (
-                  <SelectItem key={code} value={code}>
-                    {name}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-
-            <Button variant="outline" className="hidden sm:inline-flex">
-              {t.nav.signIn}
-            </Button>
-          </div> */}
-         
+              </div>
+            ) : (
+              <Link href="/login">
+                <Button variant="outline" className="hidden sm:inline-flex">
+                  {t.nav.signIn}
+                </Button>
+              </Link>
+            )}
+          </div>
         </div>
       </div>
     </header>

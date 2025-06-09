@@ -19,6 +19,13 @@ export const translations = {
       description: `Transform your photos into enchanting Minecraft-style artwork with our free AI image generator. Experience the magic of Minecraft\'s art style powered by advanced AI technology.`,
       cta: 'Click To Generate Minecraft-Style Now!',
     },
+    login: {
+      title: 'Welcome',
+      subtitle: 'Sign in with your Google account to get started',
+      googleButton: 'Continue with Google',
+      terms: 'By signing in, you agree to our Terms of Service and Privacy Policy',
+      backToHome: '← Back to home',
+    },
   },
   zh: {
     nav: {
@@ -34,6 +41,13 @@ export const translations = {
       cta: '立即体验',
       before: '原图',
       after: '效果图',
+    },
+    login: {
+      title: '欢迎登录',
+      subtitle: '使用 Google 账户快速登录开始使用我们的服务',
+      googleButton: '使用 Google 登录',
+      terms: '登录即表示您同意我们的服务条款和隐私政策',
+      backToHome: '← 返回首页',
     },
   },
 }; 

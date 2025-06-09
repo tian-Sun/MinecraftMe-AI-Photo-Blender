@@ -2,11 +2,17 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ClientBody from "./ClientBody";
-import { LanguageProvider } from '@/contexts/LanguageContext';
 import Header from '@/components/Header';
 import Script from 'next/script';
+import { StagewiseToolbar } from '@stagewise/toolbar-next';
+import Providers from '@/components/Providers';
 
 const inter = Inter({ subsets: ["latin"] });
+
+// Stagewise配置
+const stagewiseConfig = {
+  plugins: []
+};
 
 export const metadata: Metadata = {
   title: "Minecraft Photo Background Generator | Upload & Blend Instantly",
@@ -38,10 +44,14 @@ export default function RootLayout({
         </Script>
       </head>
       <body suppressHydrationWarning className={inter.className}>
-        <LanguageProvider>
+        <Providers>
           <Header />
           {children}
-        </LanguageProvider>
+          {/* Stagewise工具栏 - 仅在开发模式下显示 */}
+          {process.env.NODE_ENV === 'development' && (
+            <StagewiseToolbar config={stagewiseConfig} />
+          )}
+        </Providers>
       </body>
     </html>
   );

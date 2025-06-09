@@ -12,9 +12,10 @@ const plans = [
     currency: 'USD',
     description: 'Free Try.',
     features: [
-      'Access to free Minecraft style image generator',
+      'One free trial per account per day',
       'Basic style options',
-      'ChatGPT integration',
+      'Access to free Minecraft style image generator',
+      '@black-forest-labs/flux-kontext-pro integration',
       'Standard resolution',
     ],
     buttonText: 'Try Free',
@@ -89,9 +90,9 @@ export default function PricingPlans() {
     <section id="pricing" className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Ghibli AI Plans</h2>
+          <h2 className="text-4xl font-bold mb-4">MinecraftStyle Plans</h2>
           <p className="text-lg text-muted-foreground">
-            Choose the right Ghibli AI plan for your needs.
+            Choose the right MinecraftStyle plan for your needs.
           </p>
         </div>
 

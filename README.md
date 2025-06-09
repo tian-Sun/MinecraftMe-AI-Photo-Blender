@@ -1,153 +1,120 @@
-# minecraftstyle.online - AI照片融合 · 像素艺术生成器 🎮
+# MinecraftMe AI Photo Blender
 
-一个 AI 驱动的工具，将您的照片一键融合进 Minecraft 风格世界，生成专属像素艺术照！
+Transform your photos into Minecraft-style pixelated art using AI!
 
-![Demo](https://minecraftstyle.online/demo.png)
+## Features
 
-## ✨ 主要功能
+- 📸 **Photo Conversion**: Upload any photo and convert it to Minecraft style
+- 🔐 **Google OAuth Authentication**: Secure login with Google accounts
+- 📊 **Daily Usage Limits**: Track and limit daily usage per user
+- ⚡ **Real-time Processing**: See your conversion status in real-time
+- 📱 **Responsive UI**: Works on desktop and mobile devices
 
-- **🖼️ 拖拽上传**：便捷上传照片，实时预览
-- **🤖 智能抠图**：AI自动去除背景
-- **🏔️ 像素背景库**：精选 Minecraft 风格场景
-- **🎨 画布编辑**：自由拖动缩放人物
-- **⚡ AI融合生成**：一键生成像素艺术照
-- **📱 响应式设计**：移动端/桌面端完美适配
-- **💾 即时下载**：高质量 PNG 导出
-- **🎭 演示模式**：无需 API 配置即可体验
+## Environment Setup
 
-## 🚀 在线体验
-
-🌐 **[立即体验 minecraftstyle.online](https://minecraftstyle.online)**
-
-## 🛠️ Tech Stack
-
-- **Framework**: Next.js 14 with App Router
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS + shadcn/ui
-- **AI Integration**: Replicate API
-- **Canvas**: HTML5 Canvas (no external libraries)
-- **Deployment**: Netlify
-- **Package Manager**: Bun
-
-## 📋 Prerequisites
-
-- Node.js 18+ or Bun
-- Replicate API account (for production use)
-
-## 🔧 Installation
-
-1. **Clone the repository**
+### 1. Copy Environment File
 ```bash
-git clone https://github.com/tian-Sun/MinecraftMe-AI-Photo-Blender.git
-cd MinecraftMe-AI-Photo-Blender
-```
-
-2. **Install dependencies**
-```bash
-# Using Bun (recommended)
-bun install
-
-# Or using npm
-npm install
-```
-
-3. **Environment Setup**
-```bash
-# Copy the environment file
 cp .env.local.example .env.local
-
-# Edit .env.local and add your Replicate API token
-REPLICATE_API_TOKEN=your_replicate_token_here
 ```
 
-4. **Start development server**
-```bash
-# Using Bun
-bun dev
+### 2. Configure Required Variables
 
-# Or using npm
+#### Replicate API
+Get your API token from [Replicate](https://replicate.com/account/api-tokens):
+```bash
+REPLICATE_API_TOKEN=r8_your_actual_token_here
+```
+
+#### NextAuth Configuration
+Generate a random secret:
+```bash
+NEXTAUTH_SECRET=your_random_secret_at_least_32_characters
+NEXTAUTH_URL=http://localhost:3000
+```
+
+#### Google OAuth
+1. Go to [Google Cloud Console](https://console.cloud.google.com/)
+2. Create a new project or select existing one
+3. Enable Google+ API
+4. Create OAuth 2.0 credentials
+5. Set authorized redirect URI: `http://localhost:3000/api/auth/callback/google`
+```bash
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+```
+
+#### Supabase Database
+1. Create account at [Supabase](https://supabase.com/)
+2. Create a new project
+3. Go to Settings → API
+4. Copy your project URL and anon key
+```bash
+NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+### 3. Setup Database
+1. In your Supabase dashboard, go to SQL Editor
+2. Copy and run the SQL script from `database/schema.sql`
+3. This will create the `user_usage` table for tracking daily limits
+
+## Installation
+
+```bash
+# Install dependencies
+npm install
+
+# Setup environment variables
+cp .env.local.example .env.local
+# Edit .env.local with your actual values
+
+# Run development server
 npm run dev
 ```
 
-Visit `http://localhost:3000` to see the app in action!
+Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-## 🔑 API Configuration
+## Usage
 
-### Replicate API Setup
+1. **Sign In**: Click "Sign in with Google" to authenticate
+2. **Upload Photo**: Drag and drop or click to upload your photo
+3. **Wait for Processing**: Watch the real-time processing status
+4. **Download Result**: Download your Minecraft-style image
 
-1. **Create a Replicate Account**
-   - Visit [replicate.com](https://replicate.com)
-   - Sign up for a free account
+## Tech Stack
 
-2. **Get Your API Token**
-   - Go to your [account settings](https://replicate.com/account/api-tokens)
-   - Create a new API token
-   - Copy the token (starts with `r8_`)
+- **Next.js 14**: React framework with App Router
+- **TypeScript**: Type-safe development
+- **Tailwind CSS**: Utility-first styling
+- **NextAuth.js**: Authentication
+- **Supabase**: Database and backend services
+- **Replicate**: AI image processing
+- **SWR**: Data fetching and caching
 
-3. **Add Token to Environment**
-   ```bash
-   # In your .env.local file
-   REPLICATE_API_TOKEN=r8_your_actual_token_here
-   ```
-
-### AI Models Used
-
-- **Background Removal**: `men1scus/birefnet` - High-quality subject segmentation
-- **AI Blending**: `black-forest-labs/flux-fill-pro` - Advanced inpainting and blending
-
-## 📖 Usage Guide
-
-### 1. Upload Your Photo
-- Drag and drop an image or click to browse
-- Supports JPG, PNG, and other common formats
-- Preview appears instantly
-
-### 2. Remove Background
-- Click "Remove Background" button
-- AI automatically detects and removes the background
-- Preview the cutout result
-
-### 3. Choose Minecraft Scene
-- Browse through curated Minecraft backgrounds
-- Click to select your favorite scene
-- Preview updates in real-time
-
-### 4. Position Your Character
-- Use the canvas editor to position your portrait
-- Resize and adjust placement as needed
-- Visual guides help with positioning
-
-### 5. AI Blend & Download
-- Click "Blend with AI" for realistic integration
-- AI seamlessly merges your photo with the scene
-- Download your Minecraft avatar as PNG
-
-## 🏗️ Project Structure
+## Project Structure
 
 ```
-MinecraftMe-AI-Photo-Blender/
-├── src/
-│   ├── app/
-│   │   ├── api/
-│   │   │   ├── ai-blend/route.ts      # AI blending endpoint
-│   │   │   └── remove-background/route.ts # Background removal endpoint
-│   │   ├── globals.css                # Global styles
-│   │   ├── layout.tsx                 # App layout
-│   │   └── page.tsx                   # Main page
-│   ├── components/
-│   │   ├── AIBlendButton.tsx          # AI blend trigger
-│   │   ├── BackgroundSelector.tsx     # Minecraft backgrounds
-│   │   ├── CanvasEditor.tsx           # Portrait positioning
-│   │   └── ImageUploader.tsx          # File upload component
-│   └── lib/
-│       ├── replicate.ts               # Replicate client setup
-│       └── utils.ts                   # Utility functions
-├── public/
-│   └── backgrounds/                   # Minecraft background images
-├── package.json                       # Dependencies
-├── tailwind.config.ts                 # Tailwind configuration
-├── next.config.js                     # Next.js configuration
-└── netlify.toml                       # Netlify deployment config
+src/
+├── app/                 # Next.js App Router pages
+├── components/          # Reusable UI components
+├── lib/                 # Utility functions and configurations
+├── contexts/            # React contexts
+└── types/               # TypeScript type definitions
+```
+
+## Database Schema
+
+The application uses a simple `user_usage` table to track daily usage limits:
+
+```sql
+user_usage (
+  id: SERIAL PRIMARY KEY,
+  user_email: VARCHAR(255),
+  usage_count: INTEGER,
+  usage_date: DATE,
+  created_at: TIMESTAMP,
+  updated_at: TIMESTAMP
+)
 ```
 
 ## 🚀 Deployment

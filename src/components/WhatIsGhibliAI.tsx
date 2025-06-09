@@ -14,8 +14,25 @@ export default function WhatIs() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Content */}
-          <div className="space-y-8">
+         
+
+          {/* Left Image */}
+          <div className="relative">
+            <Card className="overflow-hidden shadow-lg">
+              <CardContent className="p-0">
+                <Image
+                  src="/demo/result.png"
+                  alt="Ghibli style characters"
+                  width={500}
+                  height={400}
+                  className="w-full h-auto"
+                />
+              </CardContent>
+            </Card>
+          </div>
+
+ {/* Right Content */}
+ <div className="space-y-8">
             <h2 className="text-4xl font-bold">What is Minecraft Style Online?</h2>
             <p className="text-lg text-muted-foreground">
               Minecraft Style Online is an AI-powered platform that lets you instantly blend your own photos with any Minecraft-style background. Effortlessly create high-quality, pixel-art inspired images—no registration required, completely free, and perfect for fans, creators, and anyone who loves unique digital art.
@@ -58,21 +75,6 @@ export default function WhatIs() {
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* Right Image */}
-          <div className="relative">
-            <Card className="overflow-hidden shadow-lg">
-              <CardContent className="p-0">
-                <Image
-                  src="/demo/result.png"
-                  alt="Ghibli style characters"
-                  width={500}
-                  height={400}
-                  className="w-full h-auto"
-                />
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>
