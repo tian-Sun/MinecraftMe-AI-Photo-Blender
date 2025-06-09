@@ -12,7 +12,7 @@ const plans = [
     currency: 'USD',
     description: 'Free Try.',
     features: [
-      'Access to free Ghibli image generator',
+      'Access to free Minecraft style image generator',
       'Basic style options',
       'ChatGPT integration',
       'Standard resolution',
