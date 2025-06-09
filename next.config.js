@@ -7,15 +7,6 @@ const nextConfig = {
       'lh3.googleusercontent.com'
     ],
   },
-  async redirects() {
-    return [
-      {
-        source: '/old-path/:slug',
-        destination: '/new-path/:slug',
-        permanent: true,
-      },
-    ]
-  },
 }
 
 module.exports = nextConfig 

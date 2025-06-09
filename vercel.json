@@ -5,40 +5,5 @@
   "outputDirectory": ".next",
   "env": {
     "NODE_VERSION": "18.18.0"
-  },
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.minecraftstyle.online"
-        }
-      ],
-      "destination": "https://minecraftstyle.online/:1",
-      "permanent": true
-    },
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "http://minecraftstyle.online"
-        }
-      ],
-      "destination": "https://minecraftstyle.online/:1",
-      "permanent": true
-    },
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "http://www.minecraftstyle.online"
-        }
-      ],
-      "destination": "https://minecraftstyle.online/:1",
-      "permanent": true
-    }
-  ]
+  }
 } 
