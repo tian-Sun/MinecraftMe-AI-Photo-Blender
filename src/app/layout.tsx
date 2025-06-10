@@ -33,8 +33,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://minecraftstyle.online/og-image.png",
-        width: 1200,
-        height: 630,
+        width: 1024,
+        height: 1024,
         alt: "Minecraft Style Photo Generator",
       },
     ],
@@ -55,6 +55,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@wendy_Tianf",
     title: "Free Minecraft Style Photo Generator - AI-Powered Image Converter | MinecraftStyle.online",
     description: "Free AI Image Converter - Transform human photos into Minecraft Style pixel art with custom backgrounds. 2M+ images created, instant results, completely free!",
     images: ["https://minecraftstyle.online/og-image.png"],
