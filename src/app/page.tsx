@@ -187,7 +187,7 @@ export default function Home() {
                     1. Upload Your Photo for AI Conversion
                   </h2>
                   <p className="text-sm text-gray-500 mb-4">
-                    Upload any image (under 2MB) to start the Minecraft style generator process. Our AI photo converter will transform it into pixel art.
+                    Upload any image (under 2MB) to start the Minecraft style generator process. 
                   </p>
                   <ImageUploader
                     onImageUpload={handleImageUpload}
