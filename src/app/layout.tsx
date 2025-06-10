@@ -15,8 +15,8 @@ const stagewiseConfig = {
 };
 
 export const metadata: Metadata = {
-  title: "Minecraft Photo Background Generator | Upload & Blend Instantly",
-  description: "Upload your full-body photo and blend into Minecraft backgrounds instantly. A seamless way for Minecraft fans to create game-style portraits in seconds.",
+  title: "Free Minecraft Style Photo Generator - AI-Powered Image Converter | MinecraftStyle.online",
+  description: "Minecraft Style Photo Generator | Free AI Image Converter - Transform selfies into pixel art with custom backgrounds. 2M+ images created, instant results, completely free!",
   icons: {
     icon: "/favicon.ico",
   },
