@@ -16,7 +16,7 @@ const stagewiseConfig = {
 };
 
 export const metadata: Metadata = {
-  title: "Free Minecraft Style Photo Generator - AI-Powered Image Converter | MinecraftStyle.online",
+  title: "Minecraft Style Photo Generator - MinecraftStyle.online",
   description: "Free AI Image Converter - Transform human photos into Minecraft Style pixel art with custom backgrounds. 2M+ images created, instant results, completely free!",
   keywords: "minecraft photo generator, ai pixel art creator, minecraft style converter, free photo editor, minecraft avatar generator, pixel art from photo, minecraft character maker",
   icons: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     canonical: "https://minecraftstyle.online",
   },
   openGraph: {
-    title: "Free Minecraft Style Photo Generator - AI-Powered Image Converter | MinecraftStyle.online",
+    title: "Minecraft Style Photo Generator - MinecraftStyle.online",
     description: "Free AI Image Converter - Transform human photos into Minecraft Style pixel art with custom backgrounds. 2M+ images created, instant results, completely free!",
     url: "https://minecraftstyle.online",
     siteName: "MinecraftStyle.online",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@wendy_Tianf",
-    title: "Free Minecraft Style Photo Generator - AI-Powered Image Converter | MinecraftStyle.online",
+    title: "Minecraft Style Photo Generator - MinecraftStyle.online",
     description: "Free AI Image Converter - Transform human photos into Minecraft Style pixel art with custom backgrounds. 2M+ images created, instant results, completely free!",
     images: ["https://minecraftstyle.online/og-image.png"],
   },
