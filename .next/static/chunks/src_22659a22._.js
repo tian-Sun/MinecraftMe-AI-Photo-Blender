@@ -613,9 +613,9 @@ function AIBlendButton({ canvasImage, backgroundUrl, disabled = false, onBlendCo
                 },
                 body: JSON.stringify({
                     input_image: imageUrl,
-                    prompt: "Place the human subject in a suitable position within a Minecraft background scene, ensuring natural fusion between the character and the environment. Keep the original look of the character without beautification, but allow slight pose adjustment for better interaction with the scene (e.g., sitting on blocks, walking paths, standing near trees or cliffs). Match the lighting of the character to the background light source for seamless integration—whether sunlight, shadows, or evening light. Composition should guide focus subtly to the subject without making it stand out unnaturally; align with the rule of thirds or golden ratio if needed. Avoid harsh edges or cut-out appearance. Preserve the pixelated style and lighting of the Minecraft environment, and adjust the subject's tone and shadows to match accordingly. Don't altered face, repainted face, beautified, artificial skin, unrealistic texture, face retouch, makeup, cartoonized face, doll-like, AI-generated face",
+                    prompt: "Make the main people character into Minecraft pixel style, do not change the background environment",
                     output_format: "png",
-                    safety_tolerance: 0,
+                    safety_tolerance: 2,
                     aspect_ratio: "match_input_image"
                 })
             });
@@ -2578,8 +2578,8 @@ function WhatIs() {
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
                                     className: "p-0",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        src: "/demo/result.png",
-                                        alt: "Ghibli style characters",
+                                        src: "/demo/result2.png",
+                                        alt: "Minecraft style characters",
                                         width: 500,
                                         height: 400,
                                         className: "w-full h-auto"
@@ -3078,7 +3078,7 @@ function Home() {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                         className: "text-xl font-semibold text-gray-800 mb-4",
-                                                        children: "3. Choose a Minecraft-style Background"
+                                                        children: "2. Choose a Minecraft-style Background"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/page.tsx",
                                                         lineNumber: 201,
@@ -3103,7 +3103,7 @@ function Home() {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                         className: "text-xl font-semibold text-gray-800 mb-4",
-                                                        children: "4. Canvas Edit · Drag/Scale Character"
+                                                        children: "3. Canvas Edit · Drag/Scale Character"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/page.tsx",
                                                         lineNumber: 214,
@@ -3129,7 +3129,7 @@ function Home() {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                         className: "text-xl font-semibold text-gray-800 mb-4",
-                                                        children: "5. AI Blend · One-click Pixel Art"
+                                                        children: "4. AI Blend · One-click Pixel Art"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/page.tsx",
                                                         lineNumber: 228,

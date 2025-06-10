@@ -75,9 +75,9 @@ export default function AIBlendButton({
         },
         body: JSON.stringify({
           input_image: imageUrl, // Cloudinary 上传后的图片 URL
-          prompt:"Place the human subject in a suitable position within a Minecraft background scene, ensuring natural fusion between the character and the environment. Keep the original look of the character without beautification, but allow slight pose adjustment for better interaction with the scene (e.g., sitting on blocks, walking paths, standing near trees or cliffs). Match the lighting of the character to the background light source for seamless integration—whether sunlight, shadows, or evening light. Composition should guide focus subtly to the subject without making it stand out unnaturally; align with the rule of thirds or golden ratio if needed. Avoid harsh edges or cut-out appearance. Preserve the pixelated style and lighting of the Minecraft environment, and adjust the subject's tone and shadows to match accordingly. Don't altered face, repainted face, beautified, artificial skin, unrealistic texture, face retouch, makeup, cartoonized face, doll-like, AI-generated face",
+          prompt: "Make the main people character into Minecraft pixel style, do not change the background environment",
           output_format: "png",
-          safety_tolerance: 0,
+          safety_tolerance: 2,
           aspect_ratio: "match_input_image"
         }),
       });
