@@ -133,10 +133,50 @@ const stagewiseConfig = {
     plugins: []
 };
 const metadata = {
-    title: "Minecraft Photo Background Generator | Upload & Blend Instantly",
-    description: "Upload your full-body photo and blend into Minecraft backgrounds instantly. A seamless way for Minecraft fans to create game-style portraits in seconds.",
+    title: "Free Minecraft Style Photo Generator - AI-Powered Image Converter | MinecraftStyle.online",
+    description: "Minecraft Style Photo Generator | Free AI Image Converter - Transform selfies into pixel art with custom backgrounds. 2M+ images created, instant results, completely free!",
+    keywords: "minecraft photo generator, ai pixel art creator, minecraft style converter, free photo editor, minecraft avatar generator, pixel art from photo, minecraft character maker",
     icons: {
         icon: "/favicon.ico"
+    },
+    alternates: {
+        canonical: "https://minecraftstyle.online"
+    },
+    openGraph: {
+        title: "Free Minecraft Style Photo Generator - AI-Powered Image Converter | MinecraftStyle.online",
+        description: "Minecraft Style Photo Generator | Free AI Image Converter - Transform selfies into pixel art with custom backgrounds. 2M+ images created, instant results, completely free!",
+        url: "https://minecraftstyle.online",
+        siteName: "MinecraftStyle.online",
+        images: [
+            {
+                url: "https://minecraftstyle.online/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "Minecraft Style Photo Generator"
+            }
+        ],
+        type: "website"
+    },
+    robots: {
+        index: true,
+        follow: true,
+        nocache: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            noimageindex: true,
+            'max-video-preview': -1,
+            'max-image-preview': 'large',
+            'max-snippet': -1
+        }
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Free Minecraft Style Photo Generator - AI-Powered Image Converter | MinecraftStyle.online",
+        description: "Minecraft Style Photo Generator | Free AI Image Converter - Transform selfies into pixel art with custom backgrounds. 2M+ images created, instant results, completely free!",
+        images: [
+            "https://minecraftstyle.online/og-image.png"
+        ]
     }
 };
 function RootLayout({ children }) {
@@ -150,7 +190,7 @@ function RootLayout({ children }) {
                         strategy: "afterInteractive"
                     }, void 0, false, {
                         fileName: "[project]/src/app/layout.tsx",
-                        lineNumber: 33,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$script$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -164,7 +204,7 @@ function RootLayout({ children }) {
           `
                     }, void 0, false, {
                         fileName: "[project]/src/app/layout.tsx",
-                        lineNumber: 37,
+                        lineNumber: 75,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$script$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -179,13 +219,13 @@ function RootLayout({ children }) {
           `
                     }, void 0, false, {
                         fileName: "[project]/src/app/layout.tsx",
-                        lineNumber: 47,
+                        lineNumber: 85,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/layout.tsx",
-                lineNumber: 32,
+                lineNumber: 70,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
@@ -195,7 +235,7 @@ function RootLayout({ children }) {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Header$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/src/app/layout.tsx",
-                            lineNumber: 59,
+                            lineNumber: 97,
                             columnNumber: 11
                         }, this),
                         children,
@@ -203,24 +243,24 @@ function RootLayout({ children }) {
                             config: stagewiseConfig
                         }, void 0, false, {
                             fileName: "[project]/src/app/layout.tsx",
-                            lineNumber: 63,
+                            lineNumber: 101,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/layout.tsx",
-                    lineNumber: 58,
+                    lineNumber: 96,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/layout.tsx",
-                lineNumber: 57,
+                lineNumber: 95,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/layout.tsx",
-        lineNumber: 31,
+        lineNumber: 69,
         columnNumber: 5
     }, this);
 }

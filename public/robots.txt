@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://minecraftstyle.online/sitemap.xml
+
+# Crawl-delay for search engines
+Crawl-delay: 1
+
+# Disallow specific paths if needed (currently allowing all)
+# Disallow: /api/
+# Disallow: /admin/
+
+# Allow specific important pages
+Allow: /
+Allow: /login
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.webp$ 

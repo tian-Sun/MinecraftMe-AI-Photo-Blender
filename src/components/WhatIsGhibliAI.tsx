@@ -10,7 +10,7 @@ export default function WhatIs() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Cloud Image */}
         <div className="text-center mb-16">
-          <p className="text-muted-foreground mb-8">MinecraftStyle: Powered by Advanced AI Technology</p>
+          <p className="text-muted-foreground mb-8">MinecraftStyle: The Ultimate AI Photo Converter Powered by Advanced Technology</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -33,9 +33,9 @@ export default function WhatIs() {
 
  {/* Right Content */}
  <div className="space-y-8">
-            <h2 className="text-4xl font-bold">What is Minecraft Style Online?</h2>
+            <h2 className="text-4xl font-bold">What is Our Minecraft Style Generator?</h2>
             <p className="text-lg text-muted-foreground">
-              Minecraft Style Online is an AI-powered platform that lets you instantly blend your own photos with any Minecraft-style background. Effortlessly create high-quality, pixel-art inspired images—no registration required, completely free, and perfect for fans, creators, and anyone who loves unique digital art.
+              Our Minecraft Style Generator is an advanced AI photo converter that instantly transforms your photos into authentic pixel art. This powerful pixel art generator blends your images with Minecraft-style backgrounds, creating high-quality digital art—completely free, no registration required, perfect for gamers, creators, and pixel art enthusiasts.
             </p>
 
             <div className="space-y-6">
@@ -44,9 +44,9 @@ export default function WhatIs() {
                   <Monitor className="h-6 w-6 text-purple-600" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-2">AI Fusion</h3>
+                  <h3 className="font-semibold text-lg mb-2">AI Photo Converter Technology</h3>
                   <p className="text-muted-foreground">
-                    Automatically blend your photo with Minecraft-style backgrounds using advanced AI.
+                    Our advanced AI photo converter automatically transforms your photos into authentic Minecraft-style pixel art with perfect background integration.
                   </p>
                 </div>
               </div>
@@ -56,9 +56,9 @@ export default function WhatIs() {
                   <MessageSquare className="h-6 w-6 text-purple-600" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-2">Instant & Free</h3>
+                  <h3 className="font-semibold text-lg mb-2">Instant Pixel Art Generator</h3>
                   <p className="text-muted-foreground">
-                    No registration needed. Enjoy fast, high-quality results for free.
+                    Generate stunning pixel art instantly with our fast, free Minecraft style generator—no registration needed, just upload and create.
                   </p>
                 </div>
               </div>
@@ -68,9 +68,9 @@ export default function WhatIs() {
                   <Code className="h-6 w-6 text-purple-600" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-2">Custom & Shareable</h3>
+                  <h3 className="font-semibold text-lg mb-2">Custom Minecraft Style Art</h3>
                   <p className="text-muted-foreground">
-                    Upload any background, create your own Minecraft-style art, and share with friends or on social media.
+                    Create personalized Minecraft style art with any background. Perfect for social media, gaming profiles, and creative projects.
                   </p>
                 </div>
               </div>

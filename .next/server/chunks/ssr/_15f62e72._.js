@@ -155,6 +155,7 @@ const tree = [
         ]
     },
     {
+        metadata: {},
         "layout": [
             ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$layout$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$2c$__Next$2e$js__server__component$29$__,
             "[project]/src/app/layout.tsx"

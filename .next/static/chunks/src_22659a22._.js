@@ -757,6 +757,13 @@ var _s = __turbopack_context__.k.signature();
 function HeroSection() {
     _s();
     const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$LanguageContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLanguage"])();
+    // 回到顶部函数
+    const scrollToTop = ()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "relative gradient-hero py-20 sm:py-32",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -776,7 +783,7 @@ function HeroSection() {
                                         children: t.hero.badge
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/HeroSection.tsx",
-                                        lineNumber: 19,
+                                        lineNumber: 27,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -789,13 +796,13 @@ function HeroSection() {
                                                 children: t.hero.titleHighlight
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/HeroSection.tsx",
-                                                lineNumber: 25,
+                                                lineNumber: 33,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/HeroSection.tsx",
-                                        lineNumber: 23,
+                                        lineNumber: 31,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -803,16 +810,17 @@ function HeroSection() {
                                         children: t.hero.description
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/HeroSection.tsx",
-                                        lineNumber: 28,
+                                        lineNumber: 36,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/HeroSection.tsx",
-                                lineNumber: 18,
+                                lineNumber: 26,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                onClick: scrollToTop,
                                 className: "bg-gradient-to-r from-[#7c3aed] via-[#a855f7] to-[#c084fc] hover:shadow-glow transition-all duration-300 text-white px-8 py-6 text-lg border-0",
                                 style: {
                                     backgroundImage: 'linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #c084fc 100%)'
@@ -823,19 +831,19 @@ function HeroSection() {
                                         className: "ml-2 h-5 w-5"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/HeroSection.tsx",
-                                        lineNumber: 38,
+                                        lineNumber: 47,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/HeroSection.tsx",
-                                lineNumber: 33,
+                                lineNumber: 41,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/HeroSection.tsx",
-                        lineNumber: 17,
+                        lineNumber: 25,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -858,7 +866,7 @@ function HeroSection() {
                                                         children: "Before"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/HeroSection.tsx",
-                                                        lineNumber: 49,
+                                                        lineNumber: 58,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -871,18 +879,18 @@ function HeroSection() {
                                                             className: "w-full h-full object-cover"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/HeroSection.tsx",
-                                                            lineNumber: 53,
+                                                            lineNumber: 62,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/HeroSection.tsx",
-                                                        lineNumber: 52,
+                                                        lineNumber: 61,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/HeroSection.tsx",
-                                                lineNumber: 48,
+                                                lineNumber: 57,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -896,23 +904,23 @@ function HeroSection() {
                                                         className: "w-full h-full object-cover"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/HeroSection.tsx",
-                                                        lineNumber: 64,
+                                                        lineNumber: 73,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/HeroSection.tsx",
-                                                    lineNumber: 63,
+                                                    lineNumber: 72,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/HeroSection.tsx",
-                                                lineNumber: 62,
+                                                lineNumber: 71,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/HeroSection.tsx",
-                                        lineNumber: 47,
+                                        lineNumber: 56,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -946,17 +954,17 @@ function HeroSection() {
                                                                 fill: "#a259ff"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/HeroSection.tsx",
-                                                                lineNumber: 80,
+                                                                lineNumber: 89,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/HeroSection.tsx",
-                                                            lineNumber: 79,
+                                                            lineNumber: 88,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/HeroSection.tsx",
-                                                        lineNumber: 78,
+                                                        lineNumber: 87,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -969,13 +977,13 @@ function HeroSection() {
                                                         markerEnd: "url(#arrowhead1)"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/HeroSection.tsx",
-                                                        lineNumber: 83,
+                                                        lineNumber: 92,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/HeroSection.tsx",
-                                                lineNumber: 77,
+                                                lineNumber: 86,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -1006,17 +1014,17 @@ function HeroSection() {
                                                                 fill: "#a259ff"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/HeroSection.tsx",
-                                                                lineNumber: 89,
+                                                                lineNumber: 98,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/HeroSection.tsx",
-                                                            lineNumber: 88,
+                                                            lineNumber: 97,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/HeroSection.tsx",
-                                                        lineNumber: 87,
+                                                        lineNumber: 96,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1029,19 +1037,19 @@ function HeroSection() {
                                                         markerEnd: "url(#arrowhead2)"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/HeroSection.tsx",
-                                                        lineNumber: 92,
+                                                        lineNumber: 101,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/HeroSection.tsx",
-                                                lineNumber: 86,
+                                                lineNumber: 95,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/HeroSection.tsx",
-                                        lineNumber: 75,
+                                        lineNumber: 84,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1052,7 +1060,7 @@ function HeroSection() {
                                                 children: "After"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/HeroSection.tsx",
-                                                lineNumber: 97,
+                                                lineNumber: 106,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1067,55 +1075,55 @@ function HeroSection() {
                                                         className: "w-full h-full object-cover"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/HeroSection.tsx",
-                                                        lineNumber: 102,
+                                                        lineNumber: 111,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/HeroSection.tsx",
-                                                    lineNumber: 101,
+                                                    lineNumber: 110,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/HeroSection.tsx",
-                                                lineNumber: 100,
+                                                lineNumber: 109,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/HeroSection.tsx",
-                                        lineNumber: 96,
+                                        lineNumber: 105,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/HeroSection.tsx",
-                                lineNumber: 45,
+                                lineNumber: 54,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/HeroSection.tsx",
-                            lineNumber: 44,
+                            lineNumber: 53,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/HeroSection.tsx",
-                        lineNumber: 43,
+                        lineNumber: 52,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/HeroSection.tsx",
-                lineNumber: 15,
+                lineNumber: 23,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/HeroSection.tsx",
-            lineNumber: 14,
+            lineNumber: 22,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/HeroSection.tsx",
-        lineNumber: 13,
+        lineNumber: 21,
         columnNumber: 5
     }, this);
 }
@@ -1288,7 +1296,7 @@ function Testimonials() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
                             variant: "outline",
                             className: "mb-6",
-                            children: "Testimonial"
+                            children: "User Reviews"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Testimonials.tsx",
                             lineNumber: 37,
@@ -1296,7 +1304,7 @@ function Testimonials() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "text-4xl font-bold mb-4",
-                            children: "What Users Say About Minecraft Style Online"
+                            children: "AI Photo Converter Reviews - Minecraft Style Generator Users"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Testimonials.tsx",
                             lineNumber: 38,
@@ -1304,7 +1312,7 @@ function Testimonials() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-lg text-muted-foreground",
-                            children: "Hear from artists and creators using Minecraft Style Online in their work."
+                            children: "Real feedback from creators using our pixel art generator and Minecraft style converter."
                         }, void 0, false, {
                             fileName: "[project]/src/components/Testimonials.tsx",
                             lineNumber: 39,
@@ -1494,7 +1502,7 @@ function PricingPlans() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "text-4xl font-bold mb-4",
-                            children: "MinecraftStyle Plans"
+                            children: "Minecraft Style Generator Pricing - Free AI Photo Converter"
                         }, void 0, false, {
                             fileName: "[project]/src/components/PricingPlans.tsx",
                             lineNumber: 93,
@@ -1502,7 +1510,7 @@ function PricingPlans() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-lg text-muted-foreground",
-                            children: "Choose the right MinecraftStyle plan for your needs."
+                            children: "Start creating pixel art with our free Minecraft style generator and AI photo converter."
                         }, void 0, false, {
                             fileName: "[project]/src/components/PricingPlans.tsx",
                             lineNumber: 94,
@@ -1524,8 +1532,11 @@ function PricingPlans() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                         className: "text-xl font-semibold mb-2",
-                                        children: freePlan.name
-                                    }, void 0, false, {
+                                        children: [
+                                            "Free Pixel Art Generator - ",
+                                            freePlan.name
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/src/components/PricingPlans.tsx",
                                         lineNumber: 102,
                                         columnNumber: 15
@@ -1679,19 +1690,19 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$b
 ;
 const metrics = [
     {
-        title: 'Images Generated',
-        value: '1M+',
-        subtitle: 'Minecraft-style Artworks'
+        title: 'Pixel Art Generated',
+        value: '2M+',
+        subtitle: 'Minecraft Style Images Created'
     },
     {
-        title: 'Daily Users',
-        value: '50,000+',
-        subtitle: 'Active Users'
+        title: 'AI Conversions',
+        value: '50K+',
+        subtitle: 'Daily Photo Transformations'
     },
     {
-        title: 'Style Options',
-        value: '20+',
-        subtitle: 'Minecraft Art Styles'
+        title: 'Art Styles',
+        value: '25+',
+        subtitle: 'Pixel Art Generator Options'
     }
 ];
 function PerformanceMetrics() {
@@ -1706,7 +1717,7 @@ function PerformanceMetrics() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
                             variant: "outline",
                             className: "mb-6",
-                            children: "Stats"
+                            children: "Performance Stats"
                         }, void 0, false, {
                             fileName: "[project]/src/components/PerformanceMetrics.tsx",
                             lineNumber: 28,
@@ -1714,7 +1725,7 @@ function PerformanceMetrics() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "text-4xl font-bold mb-4",
-                            children: "Minecraft AI Performance Metrics"
+                            children: "Minecraft Style Generator & AI Photo Converter Stats"
                         }, void 0, false, {
                             fileName: "[project]/src/components/PerformanceMetrics.tsx",
                             lineNumber: 29,
@@ -1722,7 +1733,7 @@ function PerformanceMetrics() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-lg text-muted-foreground",
-                            children: "Leading the way in Minecraft-style art generation."
+                            children: "Leading the way in AI-powered pixel art generation and Minecraft style transformations."
                         }, void 0, false, {
                             fileName: "[project]/src/components/PerformanceMetrics.tsx",
                             lineNumber: 30,
@@ -1910,36 +1921,36 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$b
 ;
 const faqs = [
     {
-        question: 'What is this website and what can I do here?',
-        answer: 'You can upload your own photo and a Minecraft-style background, and our AI will generate a high-quality, seamlessly blended image for you. The service is currently free to use.'
+        question: 'What is this Minecraft style generator and how does it work?',
+        answer: 'Our AI photo converter transforms your photos into stunning Minecraft style pixel art. Simply upload your photo and choose a background—our pixel art generator creates seamlessly blended, high-quality Minecraft style images for free.'
     },
     {
-        question: 'Do I need to register or log in to use the service?',
-        answer: 'No registration is required. You can try out all features for free without creating an account.'
+        question: 'Do I need to register to use the AI photo converter?',
+        answer: 'No registration required! Our Minecraft style generator is completely free to use without creating an account. Start creating pixel art instantly.'
     },
     {
-        question: 'Will this service always be free?',
-        answer: 'The service is currently free for everyone. In the future, we may introduce paid plans for advanced features or higher usage limits.'
+        question: 'Will this pixel art generator always be free?',
+        answer: 'Yes! Our Minecraft style generator and AI photo converter are currently free for everyone. We may introduce premium features in the future, but core pixel art generation will remain free.'
     },
     {
-        question: 'Can I use the generated images for commercial purposes?',
-        answer: 'Please note that if you use official Minecraft backgrounds or assets without authorization, commercial use may not be allowed. The generated images are intended for personal or fan use.'
+        question: 'Can I use generated Minecraft style art commercially?',
+        answer: 'Generated pixel art from our AI photo converter is perfect for personal use, social media, and fan projects. For commercial use, please ensure your uploaded backgrounds comply with relevant copyrights.'
     },
     {
-        question: 'Is my uploaded photo safe?',
-        answer: 'We will not use your uploaded images.'
+        question: 'Is my photo safe with your AI photo converter?',
+        answer: 'Absolutely! We prioritize your privacy. Photos uploaded to our Minecraft style generator are processed securely and never stored or shared.'
     },
     {
-        question: 'How can I contact you if I have questions or issues?',
-        answer: 'You can reach us at: wendy.1031ht@gmail.com'
+        question: 'How can I contact support for the pixel art generator?',
+        answer: 'For questions about our Minecraft style generator or AI photo converter, reach us at: wendy.1031ht@gmail.com'
     },
     {
-        question: 'What kind of images work best?',
-        answer: 'Clear, well-lit photos with a single subject and a Minecraft-style background will produce the best results.'
+        question: 'What photos work best with the Minecraft style generator?',
+        answer: 'Our AI photo converter works best with clear, well-lit photos featuring a single subject. Any photo can become amazing pixel art with our Minecraft style generator!'
     },
     {
-        question: 'Can I use any background image?',
-        answer: 'Yes, you can upload any background you like, but for the best effect, we recommend using Minecraft-style images.'
+        question: 'Can I upload custom backgrounds to the pixel art generator?',
+        answer: 'Yes! Our Minecraft style generator accepts any background image. For authentic results, we recommend Minecraft-style backgrounds, but any image works with our AI photo converter.'
     }
 ];
 function FAQ() {
@@ -1962,7 +1973,7 @@ function FAQ() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "text-4xl font-bold mb-4",
-                            children: "Frequently Asked Questions About Minecraft Style Online"
+                            children: "Minecraft Style Generator FAQ - AI Photo Converter Guide"
                         }, void 0, false, {
                             fileName: "[project]/src/components/FAQ.tsx",
                             lineNumber: 52,
@@ -1971,7 +1982,7 @@ function FAQ() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-lg text-muted-foreground",
                             children: [
-                                "Have another question? Contact us at ",
+                                "Questions about our pixel art generator? Contact us at ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                     href: "mailto:wendy.1031ht@gmail.com",
                                     className: "text-[#a259ff] underline",
@@ -1979,7 +1990,7 @@ function FAQ() {
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/FAQ.tsx",
                                     lineNumber: 54,
-                                    columnNumber: 50
+                                    columnNumber: 68
                                 }, this),
                                 "."
                             ]
@@ -2142,7 +2153,7 @@ function Footer() {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                             src: "/logo.png",
-                                            alt: "Ghibli AI",
+                                            alt: "Minecraft Style Generator",
                                             width: 32,
                                             height: 32,
                                             className: "rounded-md"
@@ -2169,14 +2180,14 @@ function Footer() {
                                     className: "space-y-2 text-muted-foreground max-w-md",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            children: "Transform your photos into unique Minecraft-style pixel art with our free AI-powered generator."
+                                            children: "The ultimate Minecraft style generator and AI photo converter for creating stunning pixel art from your photos."
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Footer.tsx",
                                             lineNumber: 24,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            children: "Seamlessly blend your portrait into iconic blocky worlds and create your own pixel masterpiece."
+                                            children: "Transform any image into authentic Minecraft style art with our advanced pixel art generator—completely free and instant!"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Footer.tsx",
                                             lineNumber: 25,
@@ -2395,33 +2406,33 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 const features = [
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$monitor$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Monitor$3e$__["Monitor"],
-        title: 'AI-Powered Fusion',
-        description: 'Automatically blend your photo with any Minecraft-style background using advanced AI.'
+        title: 'Advanced AI Photo Converter',
+        description: 'Transform photos into authentic Minecraft style art using our cutting-edge AI photo converter technology.'
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Image$3e$__["Image"],
-        title: 'High-Resolution Output',
-        description: 'Generate crisp, high-quality images perfect for sharing and printing.'
+        title: 'High-Quality Pixel Art Output',
+        description: 'Our pixel art generator creates crisp, high-resolution Minecraft style images perfect for sharing and printing.'
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$palette$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Palette$3e$__["Palette"],
-        title: 'Custom Backgrounds',
-        description: 'Upload any background you like for a truly personalized Minecraft-style creation.'
+        title: 'Custom Minecraft Style Backgrounds',
+        description: 'Upload any background for personalized Minecraft style generator results that match your creative vision.'
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chart$2d$column$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BarChart3$3e$__["BarChart3"],
-        title: 'Multiple Styles',
-        description: 'Choose from various Minecraft-inspired art styles for unique results.'
+        title: 'Multiple Pixel Art Styles',
+        description: 'Choose from various Minecraft-inspired pixel art styles with our versatile AI photo converter.'
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$square$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageSquare$3e$__["MessageSquare"],
-        title: 'Instant Results',
-        description: 'Enjoy lightning-fast, one-click image generation—no waiting, no hassle.'
+        title: 'Instant Minecraft Style Results',
+        description: 'Our fast Minecraft style generator delivers lightning-quick pixel art transformations in seconds.'
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__["Shield"],
-        title: 'Free & No Registration',
-        description: 'Completely free to use, no sign-up required. Start creating in seconds!'
+        title: 'Free Pixel Art Generator',
+        description: 'Enjoy unlimited access to our AI photo converter—completely free, no registration required!'
     }
 ];
 function KeyFeatures() {
@@ -2436,7 +2447,7 @@ function KeyFeatures() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "text-4xl font-bold mb-4",
-                            children: "Key Features"
+                            children: "Minecraft Style Generator Features"
                         }, void 0, false, {
                             fileName: "[project]/src/components/KeyFeatures.tsx",
                             lineNumber: 51,
@@ -2444,7 +2455,7 @@ function KeyFeatures() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-lg text-muted-foreground max-w-2xl mx-auto",
-                            children: "Instantly create high-quality, AI-blended Minecraft-style images. Perfect for fans, creators, and anyone who loves unique digital art."
+                            children: "Experience the power of our AI photo converter and pixel art generator. Create stunning Minecraft style art with advanced features designed for creators, gamers, and digital artists."
                         }, void 0, false, {
                             fileName: "[project]/src/components/KeyFeatures.tsx",
                             lineNumber: 52,
@@ -2557,7 +2568,7 @@ function WhatIs() {
                     className: "text-center mb-16",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "text-muted-foreground mb-8",
-                        children: "MinecraftStyle: Powered by Advanced AI Technology"
+                        children: "MinecraftStyle: The Ultimate AI Photo Converter Powered by Advanced Technology"
                     }, void 0, false, {
                         fileName: "[project]/src/components/WhatIsGhibliAI.tsx",
                         lineNumber: 13,
@@ -2608,7 +2619,7 @@ function WhatIs() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     className: "text-4xl font-bold",
-                                    children: "What is Minecraft Style Online?"
+                                    children: "What is Our Minecraft Style Generator?"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/WhatIsGhibliAI.tsx",
                                     lineNumber: 36,
@@ -2616,7 +2627,7 @@ function WhatIs() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-lg text-muted-foreground",
-                                    children: "Minecraft Style Online is an AI-powered platform that lets you instantly blend your own photos with any Minecraft-style background. Effortlessly create high-quality, pixel-art inspired images—no registration required, completely free, and perfect for fans, creators, and anyone who loves unique digital art."
+                                    children: "Our Minecraft Style Generator is an advanced AI photo converter that instantly transforms your photos into authentic pixel art. This powerful pixel art generator blends your images with Minecraft-style backgrounds, creating high-quality digital art—completely free, no registration required, perfect for gamers, creators, and pixel art enthusiasts."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/WhatIsGhibliAI.tsx",
                                     lineNumber: 37,
@@ -2646,7 +2657,7 @@ function WhatIs() {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                             className: "font-semibold text-lg mb-2",
-                                                            children: "AI Fusion"
+                                                            children: "AI Photo Converter Technology"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/WhatIsGhibliAI.tsx",
                                                             lineNumber: 47,
@@ -2654,7 +2665,7 @@ function WhatIs() {
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-muted-foreground",
-                                                            children: "Automatically blend your photo with Minecraft-style backgrounds using advanced AI."
+                                                            children: "Our advanced AI photo converter automatically transforms your photos into authentic Minecraft-style pixel art with perfect background integration."
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/WhatIsGhibliAI.tsx",
                                                             lineNumber: 48,
@@ -2693,7 +2704,7 @@ function WhatIs() {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                             className: "font-semibold text-lg mb-2",
-                                                            children: "Instant & Free"
+                                                            children: "Instant Pixel Art Generator"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/WhatIsGhibliAI.tsx",
                                                             lineNumber: 59,
@@ -2701,7 +2712,7 @@ function WhatIs() {
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-muted-foreground",
-                                                            children: "No registration needed. Enjoy fast, high-quality results for free."
+                                                            children: "Generate stunning pixel art instantly with our fast, free Minecraft style generator—no registration needed, just upload and create."
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/WhatIsGhibliAI.tsx",
                                                             lineNumber: 60,
@@ -2740,7 +2751,7 @@ function WhatIs() {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                             className: "font-semibold text-lg mb-2",
-                                                            children: "Custom & Shareable"
+                                                            children: "Custom Minecraft Style Art"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/WhatIsGhibliAI.tsx",
                                                             lineNumber: 71,
@@ -2748,7 +2759,7 @@ function WhatIs() {
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-muted-foreground",
-                                                            children: "Upload any background, create your own Minecraft-style art, and share with friends or on social media."
+                                                            children: "Create personalized Minecraft style art with any background. Perfect for social media, gaming profiles, and creative projects."
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/WhatIsGhibliAI.tsx",
                                                             lineNumber: 72,
@@ -2930,7 +2941,7 @@ function Home() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     className: "text-4xl font-bold text-[#22223b] mb-2",
-                                    children: "Ready to Minecraft Yourself?"
+                                    children: "Ready to Create Minecraft Style Art? AI Photo Converter in Action!"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/page.tsx",
                                     lineNumber: 128,
@@ -2938,7 +2949,7 @@ function Home() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-lg text-[#a259ff]",
-                                    children: "Upload a Photo and Begin!"
+                                    children: "Transform Your Photos with Our Advanced Pixel Art Generator - Upload & Begin!"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/page.tsx",
                                     lineNumber: 131,
@@ -3045,7 +3056,7 @@ function Home() {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                         className: "text-xl font-semibold text-gray-800 mb-4",
-                                                        children: "1. Upload Your Photo"
+                                                        children: "1. Upload Your Photo for AI Conversion"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/page.tsx",
                                                         lineNumber: 186,
@@ -3053,7 +3064,7 @@ function Home() {
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-sm text-gray-500 mb-4",
-                                                        children: "Please upload an image smaller than 2MB, otherwise the generation may fail."
+                                                        children: "Upload any image (under 2MB) to start the Minecraft style generator process. Our AI photo converter will transform it into pixel art."
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/page.tsx",
                                                         lineNumber: 189,
@@ -3078,7 +3089,7 @@ function Home() {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                         className: "text-xl font-semibold text-gray-800 mb-4",
-                                                        children: "2. Choose a Minecraft-style Background"
+                                                        children: "2. Choose Your Minecraft Style Background"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/page.tsx",
                                                         lineNumber: 201,
@@ -3129,7 +3140,7 @@ function Home() {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                         className: "text-xl font-semibold text-gray-800 mb-4",
-                                                        children: "4. AI Blend · One-click Pixel Art"
+                                                        children: "4. AI Pixel Art Generator · One-click Transformation"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/page.tsx",
                                                         lineNumber: 228,
@@ -3162,7 +3173,7 @@ function Home() {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                 className: "text-xl font-semibold text-gray-800 mb-4",
-                                                children: "AI Blend Result · Download Your Pixel Art"
+                                                children: "Your Minecraft Style Art is Ready! · Download Your Pixel Art Creation"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/page.tsx",
                                                 lineNumber: 244,
@@ -3182,9 +3193,9 @@ function Home() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                 href: blendResult,
-                                                download: "minecraftstyle-art.png",
+                                                download: "minecraft-style-pixel-art.png",
                                                 className: "mt-4 inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition",
-                                                children: "Download Pixel Art"
+                                                children: "Download Your Minecraft Style Pixel Art"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/page.tsx",
                                                 lineNumber: 253,

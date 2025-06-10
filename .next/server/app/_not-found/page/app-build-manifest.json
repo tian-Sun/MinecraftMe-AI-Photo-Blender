@@ -2,8 +2,7 @@
   "pages": {
     "/_not-found/page": [
       "static/chunks/[root-of-the-server]__9a168d68._.css",
-      "static/chunks/node_modules_@stagewise_toolbar-react_dist_index_1a613eaa.js",
-      "static/chunks/node_modules_4175ca77._.js",
+      "static/chunks/node_modules_2784eaca._.js",
       "static/chunks/src_3428c1d6._.js",
       "static/chunks/src_app_layout_tsx_c0237562._.js",
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",

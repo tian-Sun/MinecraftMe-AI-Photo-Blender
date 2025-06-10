@@ -34,10 +34,10 @@ export default function Testimonials() {
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-6">Testimonial</Badge>
-          <h2 className="text-4xl font-bold mb-4">What Users Say About Minecraft Style Online</h2>
+          <Badge variant="outline" className="mb-6">User Reviews</Badge>
+          <h2 className="text-4xl font-bold mb-4">AI Photo Converter Reviews - Minecraft Style Generator Users</h2>
           <p className="text-lg text-muted-foreground">
-            Hear from artists and creators using Minecraft Style Online in their work.
+            Real feedback from creators using our pixel art generator and Minecraft style converter.
           </p>
         </div>
 

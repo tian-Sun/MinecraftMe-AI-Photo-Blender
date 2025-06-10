@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="flex items-center space-x-2 mb-4">
               <Image
                 src="/logo.png"
-                alt="Ghibli AI"
+                alt="Minecraft Style Generator"
                 width={32}
                 height={32}
                 className="rounded-md"
@@ -21,8 +21,8 @@ export default function Footer() {
               <span className="text-xl font-bold">MinecraftStyle.online</span>
             </div>
             <div className="space-y-2 text-muted-foreground max-w-md">
-                <p>Transform your photos into unique Minecraft-style pixel art with our free AI-powered generator.</p>
-                <p>Seamlessly blend your portrait into iconic blocky worlds and create your own pixel masterpiece.</p>
+                <p>The ultimate Minecraft style generator and AI photo converter for creating stunning pixel art from your photos.</p>
+                <p>Transform any image into authentic Minecraft style art with our advanced pixel art generator—completely free and instant!</p>
             </div>
           </div>
 

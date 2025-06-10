@@ -9,6 +9,14 @@ import { useLanguage } from '@/contexts/LanguageContext';
 export default function HeroSection() {
   const { t } = useLanguage();
 
+  // 回到顶部函数
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <section className="relative gradient-hero py-20 sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -31,6 +39,7 @@ export default function HeroSection() {
             </div>
 
             <Button
+              onClick={scrollToTop}
               className="bg-gradient-to-r from-[#7c3aed] via-[#a855f7] to-[#c084fc] hover:shadow-glow transition-all duration-300 text-white px-8 py-6 text-lg border-0"
               style={{ backgroundImage: 'linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #c084fc 100%)' }}
             >

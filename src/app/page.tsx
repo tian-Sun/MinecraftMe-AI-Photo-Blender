@@ -126,10 +126,10 @@ export default function Home() {
           {/* 标题 */}
           <header className="text-center mb-8">
             <h2 className="text-4xl font-bold text-[#22223b] mb-2">
-            Ready to Minecraft Yourself? 
+            Ready to Create Minecraft Style Art? AI Photo Converter in Action!
             </h2>
             <p className="text-lg text-[#a259ff]">
-            Upload a Photo and Begin!
+            Transform Your Photos with Our Advanced Pixel Art Generator - Upload & Begin!
             </p>
           </header>
           <div>
@@ -184,10 +184,10 @@ export default function Home() {
                 {/* 步骤 1：图片上传 */}
                 <div className="bg-white rounded-lg p-6 shadow-sm w-full">
                   <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                    1. Upload Your Photo
+                    1. Upload Your Photo for AI Conversion
                   </h2>
                   <p className="text-sm text-gray-500 mb-4">
-                    Please upload an image smaller than 2MB, otherwise the generation may fail.
+                    Upload any image (under 2MB) to start the Minecraft style generator process. Our AI photo converter will transform it into pixel art.
                   </p>
                   <ImageUploader
                     onImageUpload={handleImageUpload}
@@ -199,7 +199,7 @@ export default function Home() {
                 {personImage && (
                   <div className="bg-white rounded-lg p-6 shadow-sm w-full">
                     <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                      2. Choose a Minecraft-style Background
+                      2. Choose Your Minecraft Style Background
                     </h2>
                     <BackgroundSelector
                       onBackgroundSelect={handleBackgroundSelect}
@@ -226,7 +226,7 @@ export default function Home() {
                 {canvasImage && selectedBackground && (
                   <div className="bg-white rounded-lg p-6 shadow-sm w-full">
                     <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                      4. AI Blend · One-click Pixel Art
+                      4. AI Pixel Art Generator · One-click Transformation
                     </h2>
                     <AIBlendButton
                       canvasImage={canvasImage}
@@ -242,7 +242,7 @@ export default function Home() {
               {blendResult && (
                 <div className="bg-white rounded-lg p-6 shadow-sm mt-8 text-center">
                   <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                    AI Blend Result · Download Your Pixel Art
+                    Your Minecraft Style Art is Ready! · Download Your Pixel Art Creation
                   </h2>
                   <img
                     src={blendResult}
@@ -252,10 +252,10 @@ export default function Home() {
                   />
                   <a
                     href={blendResult}
-                    download="minecraftstyle-art.png"
+                    download="minecraft-style-pixel-art.png"
                     className="mt-4 inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition"
                   >
-                    Download Pixel Art
+                    Download Your Minecraft Style Pixel Art
                   </a>
                 </div>
               )}

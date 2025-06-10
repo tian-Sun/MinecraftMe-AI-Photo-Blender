@@ -10,36 +10,36 @@ import { Badge } from '@/components/ui/badge';
 
 const faqs = [
   {
-    question: 'What is this website and what can I do here?',
-    answer: 'You can upload your own photo and a Minecraft-style background, and our AI will generate a high-quality, seamlessly blended image for you. The service is currently free to use.',
+    question: 'What is this Minecraft style generator and how does it work?',
+    answer: 'Our AI photo converter transforms your photos into stunning Minecraft style pixel art. Simply upload your photo and choose a background—our pixel art generator creates seamlessly blended, high-quality Minecraft style images for free.',
   },
   {
-    question: 'Do I need to register or log in to use the service?',
-    answer: 'No registration is required. You can try out all features for free without creating an account.',
+    question: 'Do I need to register to use the AI photo converter?',
+    answer: 'No registration required! Our Minecraft style generator is completely free to use without creating an account. Start creating pixel art instantly.',
   },
   {
-    question: 'Will this service always be free?',
-    answer: 'The service is currently free for everyone. In the future, we may introduce paid plans for advanced features or higher usage limits.',
+    question: 'Will this pixel art generator always be free?',
+    answer: 'Yes! Our Minecraft style generator and AI photo converter are currently free for everyone. We may introduce premium features in the future, but core pixel art generation will remain free.',
   },
   {
-    question: 'Can I use the generated images for commercial purposes?',
-    answer: 'Please note that if you use official Minecraft backgrounds or assets without authorization, commercial use may not be allowed. The generated images are intended for personal or fan use.',
+    question: 'Can I use generated Minecraft style art commercially?',
+    answer: 'Generated pixel art from our AI photo converter is perfect for personal use, social media, and fan projects. For commercial use, please ensure your uploaded backgrounds comply with relevant copyrights.',
   },
   {
-    question: 'Is my uploaded photo safe?',
-    answer: 'We will not use your uploaded images.',
+    question: 'Is my photo safe with your AI photo converter?',
+    answer: 'Absolutely! We prioritize your privacy. Photos uploaded to our Minecraft style generator are processed securely and never stored or shared.',
   },
   {
-    question: 'How can I contact you if I have questions or issues?',
-    answer: 'You can reach us at: wendy.1031ht@gmail.com',
+    question: 'How can I contact support for the pixel art generator?',
+    answer: 'For questions about our Minecraft style generator or AI photo converter, reach us at: wendy.1031ht@gmail.com',
   },
   {
-    question: 'What kind of images work best?',
-    answer: 'Clear, well-lit photos with a single subject and a Minecraft-style background will produce the best results.',
+    question: 'What photos work best with the Minecraft style generator?',
+    answer: 'Our AI photo converter works best with clear, well-lit photos featuring a single subject. Any photo can become amazing pixel art with our Minecraft style generator!',
   },
   {
-    question: 'Can I use any background image?',
-    answer: 'Yes, you can upload any background you like, but for the best effect, we recommend using Minecraft-style images.',
+    question: 'Can I upload custom backgrounds to the pixel art generator?',
+    answer: 'Yes! Our Minecraft style generator accepts any background image. For authentic results, we recommend Minecraft-style backgrounds, but any image works with our AI photo converter.',
   },
 ];
 
@@ -49,9 +49,9 @@ export default function FAQ() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-6">FAQ</Badge>
-          <h2 className="text-4xl font-bold mb-4">Frequently Asked Questions About Minecraft Style Online</h2>
+          <h2 className="text-4xl font-bold mb-4">Minecraft Style Generator FAQ - AI Photo Converter Guide</h2>
           <p className="text-lg text-muted-foreground">
-            Have another question? Contact us at <a href="mailto:wendy.1031ht@gmail.com" className="text-[#a259ff] underline">wendy.1031ht@gmail.com</a>.
+            Questions about our pixel art generator? Contact us at <a href="mailto:wendy.1031ht@gmail.com" className="text-[#a259ff] underline">wendy.1031ht@gmail.com</a>.
           </p>
         </div>
 

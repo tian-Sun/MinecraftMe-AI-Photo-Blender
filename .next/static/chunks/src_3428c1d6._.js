@@ -86,18 +86,18 @@ const translations = {
             signIn: 'Sign In'
         },
         hero: {
-            badge: '2025 🎉 Free Minecraft Style AI Image Generator Now Available',
-            title: 'Step into the Minecraft World — With Your Own Photo',
+            badge: '2025 🎉 Free Minecraft Style Generator & AI Photo Converter Available',
+            title: 'Transform Photos into Minecraft Style Art — with Our AI Photo Converter',
             titleHighlight: 'Free',
-            description: `Transform your photos into enchanting Minecraft-style artwork with our free AI image generator. Experience the magic of Minecraft\'s art style powered by advanced AI technology.`,
-            cta: 'Click To Generate Minecraft-Style Now!'
+            description: `Create stunning pixel art with our advanced Minecraft style generator. Transform your photos into enchanting Minecraft-style artwork using our free AI photo converter and pixel art generator technology.`,
+            cta: 'Start Your Minecraft Style Generator Now!'
         },
         login: {
-            title: 'Welcome',
-            subtitle: 'Sign in with your Google account to get started',
+            title: 'Welcome to Minecraft Style Generator',
+            subtitle: 'Sign in with Google to access our AI photo converter',
             googleButton: 'Continue with Google',
             terms: 'By signing in, you agree to our Terms of Service and Privacy Policy',
-            backToHome: '← Back to home'
+            backToHome: '← Back to Pixel Art Generator'
         }
     },
     zh: {
