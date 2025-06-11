@@ -18,12 +18,12 @@ const stagewiseConfig = {
 export const metadata: Metadata = {
   title: "Minecraft Style Photo Generator - MinecraftStyle.online",
   description: "Free AI Image Converter - Transform human photos into Minecraft Style pixel art with custom backgrounds. 2M+ images created, instant results, completely free!",
-  keywords: "minecraft photo generator, ai pixel art creator, minecraft style converter, free photo editor, minecraft avatar generator, pixel art from photo, minecraft character maker",
+  keywords: "minecraft photo generator, ai pixel art creator, minecraft style converter, minecraft avatar generator",
   icons: {
     icon: "/favicon.ico",
   },
   alternates: {
-    canonical: "https://minecraftstyle.online",
+    canonical: "https://www.minecraftstyle.online",
   },
   openGraph: {
     title: "Minecraft Style Photo Generator - MinecraftStyle.online",

@@ -263,7 +263,7 @@ export default function Home() {
           </div>
         </div>
         <HeroSection />
-        {/* <ExamplesGallery /> */}
+        <ExamplesGallery />
         <WhatIs />
         <KeyFeatures />
         <PerformanceMetrics />

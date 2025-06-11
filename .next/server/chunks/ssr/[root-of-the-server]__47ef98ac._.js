@@ -171,25 +171,25 @@ const stagewiseConfig = {
     plugins: []
 };
 const metadata = {
-    title: "Free Minecraft Style Photo Generator - AI-Powered Image Converter | MinecraftStyle.online",
+    title: "Minecraft Style Photo Generator - MinecraftStyle.online",
     description: "Free AI Image Converter - Transform human photos into Minecraft Style pixel art with custom backgrounds. 2M+ images created, instant results, completely free!",
-    keywords: "minecraft photo generator, ai pixel art creator, minecraft style converter, free photo editor, minecraft avatar generator, pixel art from photo, minecraft character maker",
+    keywords: "minecraft photo generator, ai pixel art creator, minecraft style converter, minecraft avatar generator",
     icons: {
         icon: "/favicon.ico"
     },
     alternates: {
-        canonical: "https://minecraftstyle.online"
+        canonical: "https://www.minecraftstyle.online"
     },
     openGraph: {
-        title: "Free Minecraft Style Photo Generator - AI-Powered Image Converter | MinecraftStyle.online",
+        title: "Minecraft Style Photo Generator - MinecraftStyle.online",
         description: "Free AI Image Converter - Transform human photos into Minecraft Style pixel art with custom backgrounds. 2M+ images created, instant results, completely free!",
         url: "https://minecraftstyle.online",
         siteName: "MinecraftStyle.online",
         images: [
             {
                 url: "https://minecraftstyle.online/og-image.png",
-                width: 1200,
-                height: 630,
+                width: 1024,
+                height: 1024,
                 alt: "Minecraft Style Photo Generator"
             }
         ],
@@ -210,7 +210,8 @@ const metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Free Minecraft Style Photo Generator - AI-Powered Image Converter | MinecraftStyle.online",
+        site: "@wendy_Tianf",
+        title: "Minecraft Style Photo Generator - MinecraftStyle.online",
         description: "Free AI Image Converter - Transform human photos into Minecraft Style pixel art with custom backgrounds. 2M+ images created, instant results, completely free!",
         images: [
             "https://minecraftstyle.online/og-image.png"
@@ -228,7 +229,7 @@ function RootLayout({ children }) {
                         strategy: "afterInteractive"
                     }, void 0, false, {
                         fileName: "[project]/src/app/layout.tsx",
-                        lineNumber: 72,
+                        lineNumber: 73,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$script$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -242,7 +243,7 @@ function RootLayout({ children }) {
           `
                     }, void 0, false, {
                         fileName: "[project]/src/app/layout.tsx",
-                        lineNumber: 76,
+                        lineNumber: 77,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$script$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -257,13 +258,13 @@ function RootLayout({ children }) {
           `
                     }, void 0, false, {
                         fileName: "[project]/src/app/layout.tsx",
-                        lineNumber: 86,
+                        lineNumber: 87,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/layout.tsx",
-                lineNumber: 71,
+                lineNumber: 72,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
@@ -273,30 +274,30 @@ function RootLayout({ children }) {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Header$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/src/app/layout.tsx",
-                            lineNumber: 98,
+                            lineNumber: 99,
                             columnNumber: 11
                         }, this),
                         children,
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$BackToTop$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/src/app/layout.tsx",
-                            lineNumber: 100,
+                            lineNumber: 101,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/layout.tsx",
-                    lineNumber: 97,
+                    lineNumber: 98,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/layout.tsx",
-                lineNumber: 96,
+                lineNumber: 97,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/layout.tsx",
-        lineNumber: 70,
+        lineNumber: 71,
         columnNumber: 5
     }, this);
 }
