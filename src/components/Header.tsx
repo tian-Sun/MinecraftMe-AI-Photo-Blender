@@ -13,7 +13,7 @@ import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { languages, Language } from '@/lib/i18n';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { useSession, signOut } from 'next-auth/react';
 import useSWR from 'swr';
 
@@ -22,6 +22,7 @@ const fetcher = (url: string) => fetch(url).then((res) => res.json());
 export default function Header() {
   const { language, setLanguage, t } = useLanguage();
   const pathname = usePathname();
+  const router = useRouter();
   const { data: session, status } = useSession();
   
   // 获取用户剩余使用次数
@@ -33,6 +34,17 @@ export default function Header() {
       revalidateOnFocus: true,
     }
   );
+
+  function handleNavHash(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, hash: string) {
+    if (pathname === '/') {
+      e.preventDefault();
+      const el = document.querySelector(hash);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+    // 否则让Link正常跳转
+  }
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -65,18 +77,26 @@ export default function Header() {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a
-              href="#feature"
+            <Link
+              href="/#feature"
+              onClick={e => handleNavHash(e, '#feature')}
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               {t.nav.features}
-            </a>
-            <a
-              href="#pricing"
+            </Link>
+            <Link
+              href="/#pricing"
+              onClick={e => handleNavHash(e, '#pricing')}
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               {t.nav.pricing}
-            </a>
+            </Link>
+            <Link
+              href="/blog"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Blog
+            </Link>
           </nav>
 
           {/* Right side */}

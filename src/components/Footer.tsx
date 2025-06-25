@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { Separator } from '@/components/ui/separator';
 
 export default function Footer() {
@@ -31,14 +32,14 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">About</h4>
             <ul className="space-y-3 text-muted-foreground">
               <li>
-                <a href="#feature" className="hover:text-foreground transition-colors">
+                <Link href="/#feature" className="hover:text-foreground transition-colors">
                   Features
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#pricing" className="hover:text-foreground transition-colors">
+                <Link href="/#pricing" className="hover:text-foreground transition-colors">
                   Pricing
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
