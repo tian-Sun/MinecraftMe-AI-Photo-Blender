@@ -34,7 +34,9 @@ export default function Home() {
         <WhatIs />
         <KeyFeatures />
         <PerformanceMetrics />
-        <PricingPlansWithPayment />
+        <Suspense fallback={<div className="bg-white py-16 text-center">加载定价计划...</div>}>
+          <PricingPlansWithPayment />
+        </Suspense>
         <Testimonials />
         <FAQ />
         <Suspense fallback={<div className="bg-white py-16 text-center">加载博客文章...</div>}>

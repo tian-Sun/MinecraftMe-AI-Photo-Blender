@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /api/auth/
+
+Host: https://minecraftstyle.online
+Sitemap: https://minecraftstyle.online/sitemap.xml

@@ -1,0 +1,20 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/api/ai-blend/route": "/api/ai-blend",
+  "/api/auth/[...nextauth]/route": "/api/auth/[...nextauth]",
+  "/api/debug-subscription/route": "/api/debug-subscription",
+  "/api/remaining/route": "/api/remaining",
+  "/api/remove-background/route": "/api/remove-background",
+  "/api/subscription/get-payment-link/route": "/api/subscription/get-payment-link",
+  "/api/subscription/webhook/route": "/api/subscription/webhook",
+  "/api/upload/route": "/api/upload",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/login/page": "/login",
+  "/page": "/",
+  "/payment-success/page": "/payment-success",
+  "/blog/page": "/blog",
+  "/blog/[slug]/page": "/blog/[slug]",
+  "/privacy/page": "/privacy",
+  "/terms/page": "/terms"
+}

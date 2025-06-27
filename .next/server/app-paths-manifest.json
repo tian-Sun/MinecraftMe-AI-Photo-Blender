@@ -1,9 +1,20 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/ai-blend/route": "app/api/ai-blend/route.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/api/debug-subscription/route": "app/api/debug-subscription/route.js",
   "/api/remaining/route": "app/api/remaining/route.js",
-  "/blog/[slug]/page": "app/blog/[slug]/page.js",
-  "/blog/page": "app/blog/page.js",
+  "/api/remove-background/route": "app/api/remove-background/route.js",
+  "/api/subscription/get-payment-link/route": "app/api/subscription/get-payment-link/route.js",
+  "/api/subscription/webhook/route": "app/api/subscription/webhook/route.js",
+  "/api/upload/route": "app/api/upload/route.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
   "/login/page": "app/login/page.js",
   "/page": "app/page.js",
+  "/payment-success/page": "app/payment-success/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/blog/[slug]/page": "app/blog/[slug]/page.js",
+  "/privacy/page": "app/privacy/page.js",
   "/terms/page": "app/terms/page.js"
 }
