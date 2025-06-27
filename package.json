@@ -9,7 +9,9 @@
     "start": "next start",
     "lint": "bunx biome lint --write && bunx tsc --noEmit",
     "format": "bunx biome format --write",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "verify-production": "node scripts/verify-production.js",
+    "db:migrate": "echo 'Please run the SQL in database/schema.sql in your Supabase dashboard'"
   },
   "dependencies": {
     "3": "^2.1.0",

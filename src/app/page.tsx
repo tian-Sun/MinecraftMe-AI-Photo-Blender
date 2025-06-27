@@ -6,6 +6,7 @@ import AIBlendButton from "@/components/AIBlendButton";
 import HeroSection from "@/components/HeroSection";
 import Testimonials from "@/components/Testimonials";
 import PricingPlans from "@/components/PricingPlans";
+import PricingPlansWithPayment from "@/components/PricingPlansWithPayment";
 import PerformanceMetrics from "@/components/PerformanceMetrics";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
@@ -33,7 +34,7 @@ export default function Home() {
         <WhatIs />
         <KeyFeatures />
         <PerformanceMetrics />
-        <PricingPlans />
+        <PricingPlansWithPayment />
         <Testimonials />
         <FAQ />
         <Suspense fallback={<div className="bg-white py-16 text-center">加载博客文章...</div>}>
